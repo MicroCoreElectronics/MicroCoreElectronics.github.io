@@ -1,0 +1,648 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MicroCore Electronics — End-to-End Electronics Engineering</title>
+  <meta name="description" content="Professional electronics engineering: PCB design, IoT, RF, prototyping and full product development. 5+ years experience.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<!-- Ambient orbs -->
+<div class="orb orb-1"></div>
+<div class="orb orb-2"></div>
+<div class="orb orb-3"></div>
+
+<!-- ═══════════ NAV ═══════════ -->
+<nav>
+  <div class="nav-wrap">
+    <a href="#home" class="nav-logo">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 72" height="36">
+        <rect x="14" y="9" width="46" height="46" rx="5" fill="#0d1b2a"/>
+        <rect x="14" y="9" width="46" height="46" rx="5" fill="none" stroke="#38bdf8" stroke-width="1.8"/>
+        <line x1="26" y1="21" x2="50" y2="21" stroke="#38bdf8" stroke-width=".9" opacity=".45"/>
+        <line x1="26" y1="32" x2="50" y2="32" stroke="#38bdf8" stroke-width=".9" opacity=".45"/>
+        <line x1="26" y1="44" x2="50" y2="44" stroke="#38bdf8" stroke-width=".9" opacity=".45"/>
+        <line x1="26" y1="21" x2="26" y2="44" stroke="#38bdf8" stroke-width=".9" opacity=".45"/>
+        <line x1="38" y1="21" x2="38" y2="44" stroke="#38bdf8" stroke-width=".9" opacity=".45"/>
+        <line x1="50" y1="21" x2="50" y2="44" stroke="#38bdf8" stroke-width=".9" opacity=".45"/>
+        <circle cx="26" cy="32" r="2.5" fill="#38bdf8"/>
+        <circle cx="38" cy="32" r="2.5" fill="#38bdf8"/>
+        <circle cx="50" cy="32" r="2.5" fill="#38bdf8"/>
+        <line x1="3"  y1="18" x2="14" y2="18" stroke="#38bdf8" stroke-width="1.8" stroke-linecap="round"/>
+        <line x1="3"  y1="28" x2="14" y2="28" stroke="#38bdf8" stroke-width="1.8" stroke-linecap="round"/>
+        <line x1="3"  y1="38" x2="14" y2="38" stroke="#38bdf8" stroke-width="1.8" stroke-linecap="round"/>
+        <line x1="3"  y1="48" x2="14" y2="48" stroke="#38bdf8" stroke-width="1.8" stroke-linecap="round"/>
+        <line x1="60" y1="18" x2="71" y2="18" stroke="#38bdf8" stroke-width="1.8" stroke-linecap="round"/>
+        <line x1="60" y1="28" x2="71" y2="28" stroke="#38bdf8" stroke-width="1.8" stroke-linecap="round"/>
+        <line x1="60" y1="38" x2="71" y2="38" stroke="#38bdf8" stroke-width="1.8" stroke-linecap="round"/>
+        <line x1="60" y1="48" x2="71" y2="48" stroke="#38bdf8" stroke-width="1.8" stroke-linecap="round"/>
+        <line x1="25" y1="1"  x2="25" y2="9"  stroke="#38bdf8" stroke-width="1.8" stroke-linecap="round"/>
+        <line x1="37" y1="1"  x2="37" y2="9"  stroke="#38bdf8" stroke-width="1.8" stroke-linecap="round"/>
+        <line x1="49" y1="1"  x2="49" y2="9"  stroke="#38bdf8" stroke-width="1.8" stroke-linecap="round"/>
+        <line x1="25" y1="55" x2="25" y2="63" stroke="#38bdf8" stroke-width="1.8" stroke-linecap="round"/>
+        <line x1="37" y1="55" x2="37" y2="63" stroke="#38bdf8" stroke-width="1.8" stroke-linecap="round"/>
+        <line x1="49" y1="55" x2="49" y2="63" stroke="#38bdf8" stroke-width="1.8" stroke-linecap="round"/>
+        <text x="83" y="40" font-family="Arial Black,Arial,sans-serif" font-size="24" font-weight="900" letter-spacing="-.5">
+          <tspan fill="#f1f5f9">Micro</tspan><tspan fill="#38bdf8">Core</tspan>
+        </text>
+        <text x="85" y="56" font-family="Arial,sans-serif" font-size="9.5" fill="#475569" letter-spacing="4.5">ELECTRONICS</text>
+      </svg>
+    </a>
+
+    <ul class="nav-links">
+      <li><a href="#services">Services</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#portfolio">Portfolio</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+
+    <div class="nav-actions">
+      <a href="#about" class="btn-ghost">About</a>
+      <a href="#contact" class="btn-primary">Get a Quote</a>
+    </div>
+    <button class="nav-burger" aria-label="Menu">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</nav>
+
+<!-- ═══════════ HERO ═══════════ -->
+<section id="home">
+  <div class="wrap">
+    <div class="hero-grid">
+
+      <div class="hero-left">
+        <div class="hero-badge">
+          <span class="hero-badge-dot"></span>
+          Available for new projects
+        </div>
+        <h1 class="hero-title">
+          Hardware<br>Engineering<br><span class="grad">Done Right.</span>
+        </h1>
+        <p class="hero-sub">
+          From first concept to final product — PCB design, IoT &amp; RF, prototyping, testing, and full manufacturing support. One engineer. Full ownership. Zero handoff gaps.
+        </p>
+        <div class="hero-btns">
+          <a href="#contact" class="btn-primary btn-large">Start a Project</a>
+          <a href="#services" class="btn-outline btn-large">View Services</a>
+        </div>
+        <div class="hero-stats">
+          <div class="stat">
+            <div class="stat-n">5<em>+</em></div>
+            <div class="stat-l">Years in hardware</div>
+          </div>
+          <div class="stat">
+            <div class="stat-n">30<em>+</em></div>
+            <div class="stat-l">Projects shipped</div>
+          </div>
+          <div class="stat">
+            <div class="stat-n">IoT<em>/</em>RF</div>
+            <div class="stat-l">Core specialty</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- PCB Hero Visual -->
+      <div class="hero-visual">
+        <svg viewBox="0 0 460 380" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <!-- Board outline -->
+          <rect x="20" y="20" width="420" height="340" rx="12" fill="#040d1a" stroke="rgba(56,189,248,0.25)" stroke-width="1.5"/>
+
+          <!-- Grid traces -->
+          <g stroke="rgba(56,189,248,0.12)" stroke-width="1">
+            <line x1="20" y1="80"  x2="440" y2="80"/>
+            <line x1="20" y1="140" x2="440" y2="140"/>
+            <line x1="20" y1="200" x2="440" y2="200"/>
+            <line x1="20" y1="260" x2="440" y2="260"/>
+            <line x1="80"  y1="20" x2="80"  y2="360"/>
+            <line x1="160" y1="20" x2="160" y2="360"/>
+            <line x1="240" y1="20" x2="240" y2="360"/>
+            <line x1="320" y1="20" x2="320" y2="360"/>
+            <line x1="400" y1="20" x2="400" y2="360"/>
+          </g>
+
+          <!-- Main IC chip -->
+          <rect x="150" y="120" width="160" height="140" rx="8" fill="#040d1a" stroke="rgba(56,189,248,0.5)" stroke-width="1.5"/>
+          <rect x="162" y="132" width="136" height="116" rx="5" fill="rgba(56,189,248,0.04)" stroke="rgba(56,189,248,0.2)" stroke-width="1"/>
+          <!-- IC label -->
+          <text x="230" y="196" font-family="monospace" font-size="11" fill="rgba(56,189,248,0.6)" text-anchor="middle">MCU</text>
+          <text x="230" y="212" font-family="monospace" font-size="8" fill="rgba(56,189,248,0.35)" text-anchor="middle">ARM Cortex-M4</text>
+          <!-- IC corner marker -->
+          <circle cx="168" cy="138" r="3" fill="rgba(56,189,248,0.4)"/>
+
+          <!-- IC pins left -->
+          <g stroke="rgba(56,189,248,0.5)" stroke-width="1.5" stroke-linecap="round">
+            <line x1="150" y1="148" x2="130" y2="148"/>
+            <line x1="150" y1="162" x2="130" y2="162"/>
+            <line x1="150" y1="176" x2="130" y2="176"/>
+            <line x1="150" y1="190" x2="130" y2="190"/>
+            <line x1="150" y1="204" x2="130" y2="204"/>
+            <line x1="150" y1="218" x2="130" y2="218"/>
+            <line x1="150" y1="232" x2="130" y2="232"/>
+          </g>
+          <!-- IC pins right -->
+          <g stroke="rgba(56,189,248,0.5)" stroke-width="1.5" stroke-linecap="round">
+            <line x1="310" y1="148" x2="330" y2="148"/>
+            <line x1="310" y1="162" x2="330" y2="162"/>
+            <line x1="310" y1="176" x2="330" y2="176"/>
+            <line x1="310" y1="190" x2="330" y2="190"/>
+            <line x1="310" y1="204" x2="330" y2="204"/>
+            <line x1="310" y1="218" x2="330" y2="218"/>
+            <line x1="310" y1="232" x2="330" y2="232"/>
+          </g>
+          <!-- IC pins top -->
+          <g stroke="rgba(56,189,248,0.5)" stroke-width="1.5" stroke-linecap="round">
+            <line x1="178" y1="120" x2="178" y2="100"/>
+            <line x1="196" y1="120" x2="196" y2="100"/>
+            <line x1="214" y1="120" x2="214" y2="100"/>
+            <line x1="232" y1="120" x2="232" y2="100"/>
+            <line x1="250" y1="120" x2="250" y2="100"/>
+            <line x1="268" y1="120" x2="268" y2="100"/>
+            <line x1="286" y1="120" x2="286" y2="100"/>
+          </g>
+          <!-- IC pins bottom -->
+          <g stroke="rgba(56,189,248,0.5)" stroke-width="1.5" stroke-linecap="round">
+            <line x1="178" y1="260" x2="178" y2="280"/>
+            <line x1="196" y1="260" x2="196" y2="280"/>
+            <line x1="214" y1="260" x2="214" y2="280"/>
+            <line x1="232" y1="260" x2="232" y2="280"/>
+            <line x1="250" y1="260" x2="250" y2="280"/>
+            <line x1="268" y1="260" x2="268" y2="280"/>
+            <line x1="286" y1="260" x2="286" y2="280"/>
+          </g>
+
+          <!-- Traces going out -->
+          <g stroke="rgba(56,189,248,0.3)" stroke-width="1.2" fill="none">
+            <polyline points="130,148 80,148 80,80 60,80"/>
+            <polyline points="130,190 80,190"/>
+            <polyline points="130,232 100,232 100,300 60,300"/>
+            <polyline points="330,162 380,162 380,80 420,80"/>
+            <polyline points="330,204 400,204 400,280"/>
+            <polyline points="196,100 196,80 160,80 160,40"/>
+            <polyline points="250,100 250,80 320,80 320,40"/>
+            <polyline points="196,280 196,300 130,300 130,340"/>
+            <polyline points="268,280 268,320 380,320 380,360"/>
+          </g>
+
+          <!-- Via pads -->
+          <g fill="rgba(56,189,248,0.5)" stroke="rgba(56,189,248,0.3)" stroke-width="1">
+            <circle cx="80"  cy="148" r="4"/>
+            <circle cx="80"  cy="300" r="4"/>
+            <circle cx="100" cy="232" r="4"/>
+            <circle cx="380" cy="162" r="4"/>
+            <circle cx="400" cy="204" r="4"/>
+            <circle cx="196" cy="80"  r="4"/>
+            <circle cx="250" cy="80"  r="4"/>
+            <circle cx="196" cy="300" r="4"/>
+            <circle cx="268" cy="320" r="4"/>
+            <circle cx="380" cy="320" r="4"/>
+          </g>
+
+          <!-- Small SMD components left -->
+          <rect x="44" y="72" width="18" height="10" rx="2" fill="rgba(56,189,248,0.15)" stroke="rgba(56,189,248,0.4)" stroke-width="1"/>
+          <rect x="44" y="292" width="18" height="10" rx="2" fill="rgba(56,189,248,0.15)" stroke="rgba(56,189,248,0.4)" stroke-width="1"/>
+          <!-- Small SMD right -->
+          <rect x="408" y="72" width="18" height="10" rx="2" fill="rgba(56,189,248,0.15)" stroke="rgba(56,189,248,0.4)" stroke-width="1"/>
+          <rect x="393" y="276" width="10" height="18" rx="2" fill="rgba(56,189,248,0.15)" stroke="rgba(56,189,248,0.4)" stroke-width="1"/>
+          <!-- Top components -->
+          <rect x="152" y="28" width="10" height="18" rx="2" fill="rgba(56,189,248,0.15)" stroke="rgba(56,189,248,0.4)" stroke-width="1"/>
+          <rect x="312" y="28" width="10" height="18" rx="2" fill="rgba(56,189,248,0.15)" stroke="rgba(56,189,248,0.4)" stroke-width="1"/>
+          <!-- Capacitor circles -->
+          <circle cx="370" cy="340" r="14" fill="rgba(56,189,248,0.06)" stroke="rgba(56,189,248,0.35)" stroke-width="1.2"/>
+          <circle cx="370" cy="340" r="7"  fill="rgba(56,189,248,0.1)"/>
+          <circle cx="120" cy="340" r="14" fill="rgba(56,189,248,0.06)" stroke="rgba(56,189,248,0.35)" stroke-width="1.2"/>
+          <circle cx="120" cy="340" r="7"  fill="rgba(56,189,248,0.1)"/>
+
+          <!-- RF module top right -->
+          <rect x="340" y="36" width="80" height="52" rx="4" fill="rgba(56,189,248,0.05)" stroke="rgba(56,189,248,0.3)" stroke-width="1"/>
+          <text x="380" y="58" font-family="monospace" font-size="8.5" fill="rgba(56,189,248,0.45)" text-anchor="middle">RF MODULE</text>
+          <text x="380" y="70" font-family="monospace" font-size="7" fill="rgba(56,189,248,0.3)" text-anchor="middle">2.4 GHz</text>
+          <!-- Antenna trace -->
+          <polyline points="380,88 380,100 400,100 400,120 420,120 420,140 400,140 400,162" stroke="rgba(56,189,248,0.4)" stroke-width="1" fill="none"/>
+
+          <!-- Corner mounting holes -->
+          <circle cx="40"  cy="40"  r="6" fill="none" stroke="rgba(56,189,248,0.3)" stroke-width="1.5"/>
+          <circle cx="40"  cy="40"  r="2.5" fill="rgba(56,189,248,0.2)"/>
+          <circle cx="420" cy="40"  r="6" fill="none" stroke="rgba(56,189,248,0.3)" stroke-width="1.5"/>
+          <circle cx="420" cy="40"  r="2.5" fill="rgba(56,189,248,0.2)"/>
+          <circle cx="40"  cy="340" r="6" fill="none" stroke="rgba(56,189,248,0.3)" stroke-width="1.5"/>
+          <circle cx="40"  cy="340" r="2.5" fill="rgba(56,189,248,0.2)"/>
+          <circle cx="420" cy="340" r="6" fill="none" stroke="rgba(56,189,248,0.3)" stroke-width="1.5"/>
+          <circle cx="420" cy="340" r="2.5" fill="rgba(56,189,248,0.2)"/>
+
+          <!-- Outer glow overlay -->
+          <rect x="20" y="20" width="420" height="340" rx="12" fill="url(#pcbGlow)" opacity=".4"/>
+          <defs>
+            <radialGradient id="pcbGlow" cx="50%" cy="50%" r="60%">
+              <stop offset="0%"   stop-color="#38bdf8" stop-opacity=".06"/>
+              <stop offset="100%" stop-color="#38bdf8" stop-opacity="0"/>
+            </radialGradient>
+          </defs>
+        </svg>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════ TECH STRIP ═══════════ -->
+<div class="tech-strip">
+  <div class="wrap">
+    <div class="tech-strip-inner">
+      <span>PCB Design</span>
+      <span>IoT Systems</span>
+      <span>RF Engineering</span>
+      <span>Altium Designer</span>
+      <span>Prototyping</span>
+      <span>ARM Cortex-M</span>
+      <span>BLE · Wi-Fi · LoRa</span>
+      <span>DFM & Manufacturing</span>
+      <span>Signal Integrity</span>
+      <span>EMC Compliance</span>
+    </div>
+  </div>
+</div>
+
+<!-- ═══════════ SERVICES ═══════════ -->
+<section id="services">
+  <div class="wrap">
+    <div class="section-head fade-in">
+      <span class="eyebrow">Services</span>
+      <h2 class="display">From Idea to Product —<br>I Handle It All</h2>
+      <p class="lead">Whether you need a single PCB designed or a complete product engineered from scratch, I deliver professional results at every stage.</p>
+    </div>
+
+    <div class="bento fade-in">
+
+      <!-- Featured: Full Product -->
+      <div class="bento-card feat">
+        <div>
+          <div class="card-icon">
+            <svg viewBox="0 0 24 24"><polygon points="13,2 3,14 12,14 11,22 21,10 12,10"/></svg>
+          </div>
+          <h3>Full Product Development — Concept to Production</h3>
+          <p>The complete package. You come with an idea or a problem. I deliver a validated, manufacturable product. This includes specification, schematic design, PCB layout, prototype, testing, and full production-ready files — with one point of contact throughout.</p>
+        </div>
+        <span class="card-tag">Most Popular</span>
+      </div>
+
+      <!-- Specification -->
+      <div class="bento-card">
+        <div class="card-icon">
+          <svg viewBox="0 0 24 24"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14,2 14,8 20,8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/></svg>
+        </div>
+        <h3>Product Specification &amp; Requirements</h3>
+        <p>Define your product clearly before a trace is drawn. Electrical requirements, system architecture, power budgets, and interface specs — preventing costly redesigns.</p>
+      </div>
+
+      <!-- Schematic -->
+      <div class="bento-card">
+        <div class="card-icon">
+          <svg viewBox="0 0 24 24"><polyline points="22,12 18,12 15,21 9,3 6,12 2,12"/></svg>
+        </div>
+        <h3>Schematic Design</h3>
+        <p>Full schematic capture for any complexity — MCUs, power management, RF front-ends, sensors, and communication buses. Clean, readable, well-documented.</p>
+      </div>
+
+      <!-- PCB Layout — tall -->
+      <div class="bento-card tall">
+        <div class="card-icon">
+          <svg viewBox="0 0 24 24"><rect x="4" y="4" width="16" height="16" rx="2"/><rect x="9" y="9" width="6" height="6"/><line x1="9" y1="2" x2="9" y2="4"/><line x1="15" y1="2" x2="15" y2="4"/><line x1="9" y1="20" x2="9" y2="22"/><line x1="15" y1="20" x2="15" y2="22"/><line x1="20" y1="9" x2="22" y2="9"/><line x1="20" y1="14" x2="22" y2="14"/><line x1="2" y1="9" x2="4" y2="9"/><line x1="2" y1="14" x2="4" y2="14"/></svg>
+        </div>
+        <h3>PCB Layout &amp; Design</h3>
+        <p>Multi-layer PCB design with professional attention to signal integrity, EMC best practices, thermal management, and Design for Manufacturability (DFM).</p>
+        <br>
+        <p style="font-size:.82rem; color:var(--text-3);">Tools: Altium Designer · KiCad<br>Layers: up to 12<br>Min trace: 3/3 mil<br>HDI, impedance-controlled, RF</p>
+      </div>
+
+      <!-- Prototype -->
+      <div class="bento-card">
+        <div class="card-icon">
+          <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="3"/><path d="M19.07 4.93a10 10 0 0 1 0 14.14"/><path d="M4.93 4.93a10 10 0 0 0 0 14.14"/></svg>
+        </div>
+        <h3>Prototype Development</h3>
+        <p>From BOM to assembled board. I coordinate sourcing, generate manufacturing files, and manage assembly. Then bring it up systematically and get it functional.</p>
+      </div>
+
+      <!-- Testing -->
+      <div class="bento-card">
+        <div class="card-icon">
+          <svg viewBox="0 0 24 24"><path d="M14.5 10c-.83 0-1.5-.67-1.5-1.5v-5c0-.83.67-1.5 1.5-1.5s1.5.67 1.5 1.5v5c0 .83-.67 1.5-1.5 1.5z"/><path d="M20.5 10H19V8.5c0-.83.67-1.5 1.5-1.5s1.5.67 1.5 1.5-.67 1.5-1.5 1.5z"/><path d="M9.5 14c.83 0 1.5.67 1.5 1.5v5c0 .83-.67 1.5-1.5 1.5S8 21.33 8 20.5v-5c0-.83.67-1.5 1.5-1.5z"/><path d="M3.5 14H5v1.5c0 .83-.67 1.5-1.5 1.5S2 16.33 2 15.5 2.67 14 3.5 14z"/><path d="M14 14.5c0-.83.67-1.5 1.5-1.5h5c.83 0 1.5.67 1.5 1.5s-.67 1.5-1.5 1.5h-5c-.83 0-1.5-.67-1.5-1.5z"/><path d="M15.5 19H14v1.5c0 .83.67 1.5 1.5 1.5s1.5-.67 1.5-1.5-.67-1.5-1.5-1.5z"/><path d="M10 9.5C10 8.67 9.33 8 8.5 8h-5C2.67 8 2 8.67 2 9.5S2.67 11 3.5 11h5c.83 0 1.5-.67 1.5-1.5z"/><path d="M8.5 5H10V3.5C10 2.67 9.33 2 8.5 2S7 2.67 7 3.5 7.67 5 8.5 5z"/></svg>
+        </div>
+        <h3>Testing &amp; Debugging</h3>
+        <p>Systematic bring-up and root cause analysis. Oscilloscope, spectrum analyzer, network analyzer. I find what's wrong and fix it.</p>
+      </div>
+
+      <!-- Manufacturing -->
+      <div class="bento-card">
+        <div class="card-icon">
+          <svg viewBox="0 0 24 24"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+        </div>
+        <h3>Manufacturing Support</h3>
+        <p>Gerbers, drill files, BOM, pick-and-place, assembly drawings — everything your factory needs. Direct coordination with PCB fabs and PCBA houses.</p>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════ WHY MICROCORE ═══════════ -->
+<section id="why">
+  <div class="wrap">
+    <div class="why-grid">
+      <div class="fade-in">
+        <span class="eyebrow">Why MicroCore</span>
+        <h2 class="display">One Engineer.<br>Full Ownership.</h2>
+        <p class="lead" style="margin-bottom:0">Most projects fail in the gaps — between the designer, the prototyper, and the manufacturer. At MicroCore Electronics, I own the entire process.</p>
+        <ul class="check-list">
+          <li>Single point of contact from day one to production</li>
+          <li>5+ years across IoT, RF, power, motor control, and sensors</li>
+          <li>Designs built with manufacturing in mind from the start</li>
+          <li>Honest timelines and transparent communication</li>
+          <li>International clients — fully remote-capable</li>
+        </ul>
+      </div>
+      <div class="why-numbers fade-in">
+        <div class="num-card">
+          <div class="big">5+</div>
+          <div class="lbl">Years experience</div>
+        </div>
+        <div class="num-card">
+          <div class="big">30+</div>
+          <div class="lbl">Products shipped</div>
+        </div>
+        <div class="num-card">
+          <div class="big">IoT</div>
+          <div class="lbl">& RF specialty</div>
+        </div>
+        <div class="num-card">
+          <div class="big">24h</div>
+          <div class="lbl">Response time</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════ ABOUT ═══════════ -->
+<section id="about">
+  <div class="wrap">
+    <div class="about-grid">
+      <div class="about-text fade-in">
+        <span class="eyebrow">About</span>
+        <h2 class="display">The Engineer Behind MicroCore</h2>
+        <p class="big">I'm a hardware electronics engineer with 5+ years of experience taking products from concept all the way to production.</p>
+        <p>My background spans IoT systems, RF design, power electronics, motor control, sensor interfaces, and wireless communication — essentially the full breadth of modern hardware design.</p>
+        <p>I started MicroCore Electronics because I kept seeing the same problem: great ideas stuck in development hell because the engineering process was fragmented. My approach is different — I stay with the project from the first whiteboard sketch to the final production run.</p>
+        <p>Whether you're a startup building your first hardware product or an experienced team that needs extra bandwidth, I deliver the same level of professionalism and attention to detail.</p>
+      </div>
+      <div class="tech-block fade-in">
+        <span class="eyebrow" style="margin-bottom:24px">Technical Expertise</span>
+
+        <h4>Wireless &amp; RF</h4>
+        <div class="pills">
+          <span class="pill">BLE 5.x</span>
+          <span class="pill">Wi-Fi (802.11)</span>
+          <span class="pill">LoRa / LoRaWAN</span>
+          <span class="pill">Zigbee</span>
+          <span class="pill">Cellular LTE-M</span>
+          <span class="pill">Sub-GHz RF</span>
+          <span class="pill">Antenna Design</span>
+          <span class="pill">RF Matching</span>
+        </div>
+
+        <h4>Microcontrollers &amp; SoCs</h4>
+        <div class="pills">
+          <span class="pill">ARM Cortex-M</span>
+          <span class="pill">ESP32 / ESP8266</span>
+          <span class="pill">Nordic nRF52/53</span>
+          <span class="pill">STM32</span>
+          <span class="pill">RISC-V</span>
+        </div>
+
+        <h4>Power &amp; Analog</h4>
+        <div class="pills">
+          <span class="pill">Buck / Boost SMPS</span>
+          <span class="pill">Battery Management</span>
+          <span class="pill">High-Current PCB</span>
+          <span class="pill">LDO / PMIC</span>
+          <span class="pill">BLDC Motor Control</span>
+        </div>
+
+        <h4>Interfaces &amp; Protocols</h4>
+        <div class="pills">
+          <span class="pill">UART / SPI / I2C</span>
+          <span class="pill">CAN Bus</span>
+          <span class="pill">USB 2.0 / 3.0</span>
+          <span class="pill">Ethernet</span>
+          <span class="pill">RS-485 / Modbus</span>
+        </div>
+
+        <h4>EDA &amp; Tools</h4>
+        <div class="pills">
+          <span class="pill">Altium Designer</span>
+          <span class="pill">KiCad</span>
+          <span class="pill">LTspice</span>
+          <span class="pill">Oscilloscope</span>
+          <span class="pill">Spectrum Analyzer</span>
+          <span class="pill">VNA</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════ PORTFOLIO ═══════════ -->
+<section id="portfolio">
+  <div class="wrap">
+    <span class="eyebrow fade-in">Portfolio</span>
+    <h2 class="display fade-in">Selected Projects</h2>
+    <p class="lead fade-in">Hardware engineered, built, and delivered.</p>
+
+    <div class="portfolio-grid">
+      <div class="port-card fade-in">
+        <div class="port-img port-img-1">
+          <div class="port-circuit"></div>
+          <svg viewBox="0 0 24 24"><rect x="4" y="4" width="16" height="16" rx="2"/><rect x="9" y="9" width="6" height="6"/><line x1="9" y1="2" x2="9" y2="4"/><line x1="15" y1="2" x2="15" y2="4"/><line x1="9" y1="20" x2="9" y2="22"/><line x1="15" y1="20" x2="15" y2="22"/><line x1="20" y1="9" x2="22" y2="9"/><line x1="20" y1="14" x2="22" y2="14"/><line x1="2" y1="9" x2="4" y2="9"/><line x1="2" y1="14" x2="4" y2="14"/></svg>
+        </div>
+        <div class="port-body">
+          <h3>IoT Sensor Node</h3>
+          <p>Low-power multi-sensor board with BLE + LoRaWAN for industrial environment monitoring. Battery life &gt;2 years.</p>
+          <div class="port-tags">
+            <span class="port-tag">IoT</span>
+            <span class="port-tag">RF</span>
+            <span class="port-tag">Low Power</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="port-card fade-in">
+        <div class="port-img port-img-2">
+          <div class="port-circuit"></div>
+          <svg viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12 19.79 19.79 0 0 1 1.61 3.42 2 2 0 0 1 3.6 1.24h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L7.91 8.82a16 16 0 0 0 6 6l.95-.95a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 21.73 16.92z"/></svg>
+        </div>
+        <div class="port-body">
+          <h3>Custom RF Front-End</h3>
+          <p>Sub-GHz RF board with LNA, PA, custom matching network, and integrated antenna. Designed for regulatory approval.</p>
+          <div class="port-tags">
+            <span class="port-tag">RF</span>
+            <span class="port-tag">Analog</span>
+            <span class="port-tag">Antenna</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="port-card fade-in">
+        <div class="port-img port-img-3">
+          <div class="port-circuit"></div>
+          <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="3"/><path d="M19.07 4.93a10 10 0 0 1 0 14.14M4.93 4.93a10 10 0 0 0 0 14.14"/></svg>
+        </div>
+        <div class="port-body">
+          <h3>4-Axis Motor Controller</h3>
+          <p>Industrial BLDC controller with CAN bus interface, current sensing, and regenerative braking. Full product development.</p>
+          <div class="port-tags">
+            <span class="port-tag">Power</span>
+            <span class="port-tag">Motor</span>
+            <span class="port-tag">CAN Bus</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="port-cta-row fade-in">
+      <p>Have schematics to share? Send them over and let's talk.</p>
+      <a href="#contact" class="btn-primary">Get in Touch</a>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════ CONTACT ═══════════ -->
+<section id="contact">
+  <div class="wrap">
+    <div class="contact-grid">
+
+      <div class="fade-in">
+        <span class="eyebrow">Contact</span>
+        <h2 class="display">Let's Build Something Together</h2>
+        <p>Tell me about your project. I'll get back to you within 24 hours with an honest assessment and clear next steps — no fluff.</p>
+        <div class="contact-details">
+          <div class="c-row">
+            <div class="c-icon">
+              <svg viewBox="0 0 24 24"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+            </div>
+            <div>
+              <div class="c-label">Email</div>
+              <div class="c-val"><a href="mailto:info@microcoreelectronics.com">info@microcoreelectronics.com</a></div>
+            </div>
+          </div>
+          <div class="c-row">
+            <div class="c-icon">
+              <svg viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12 19.79 19.79 0 0 1 1.61 3.42 2 2 0 0 1 3.6 1.24h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.91 8.82a16 16 0 0 0 6 6l.95-.95a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 21.73 16.92z"/></svg>
+            </div>
+            <div>
+              <div class="c-label">Phone / WhatsApp</div>
+              <div class="c-val"><a href="tel:+972587444321">058-744-4321</a></div>
+            </div>
+          </div>
+          <div class="c-row">
+            <div class="c-icon">
+              <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><polyline points="12,6 12,12 16,14"/></svg>
+            </div>
+            <div>
+              <div class="c-label">Response Time</div>
+              <div class="c-val">Within 24 hours</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="fade-in">
+        <!--
+          FORM SETUP (FREE, 5 min):
+          1. Go to https://formspree.io → Sign up free
+          2. New Form → copy the ID (e.g. xpzgkqrb)
+          3. Replace YOUR_FORM_ID below with your ID
+          Free: 50 submissions/month
+        -->
+        <form class="contact-form" action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
+          <div class="form-title">Send a Message</div>
+          <div class="fg-row">
+            <div class="fg">
+              <label>Name</label>
+              <input type="text" name="name" placeholder="Your name" required>
+            </div>
+            <div class="fg">
+              <label>Email</label>
+              <input type="email" name="email" placeholder="your@email.com" required>
+            </div>
+          </div>
+          <div class="fg">
+            <label>Phone (optional)</label>
+            <input type="tel" name="phone" placeholder="+972 or international">
+          </div>
+          <div class="fg">
+            <label>Project / Company</label>
+            <input type="text" name="project" placeholder="What are you building?">
+          </div>
+          <div class="fg">
+            <label>Tell me about your project</label>
+            <textarea name="message" placeholder="Describe your project, the problem you're solving, and where you are in the process..." required></textarea>
+          </div>
+          <button type="submit" class="btn-send">Send Message →</button>
+          <p class="form-note">Or reach out directly: 058-744-4321</p>
+        </form>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════ FOOTER ═══════════ -->
+<footer>
+  <div class="wrap">
+    <div class="footer-inner">
+      <div class="footer-copy">© 2025 <strong>MicroCore Electronics</strong>. All rights reserved.</div>
+      <ul class="footer-links">
+        <li><a href="#services">Services</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#portfolio">Portfolio</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </div>
+  </div>
+</footer>
+
+<script>
+  // Fade-in on scroll
+  const obs = new IntersectionObserver(entries => {
+    entries.forEach(e => { if(e.isIntersecting) { e.target.classList.add('visible'); obs.unobserve(e.target); } });
+  }, { threshold: 0.1 });
+  document.querySelectorAll('.fade-in').forEach(el => obs.observe(el));
+
+  // Mobile menu
+  const burger = document.querySelector('.nav-burger');
+  const navLinks = document.querySelector('.nav-links');
+  const navActions = document.querySelector('.nav-actions');
+  burger.addEventListener('click', () => {
+    const open = navLinks.style.display === 'flex';
+    [navLinks, navActions].forEach(el => {
+      el.style.display = open ? '' : 'flex';
+      el.style.flexDirection = 'column';
+      el.style.position = open ? '' : 'absolute';
+      el.style.top = open ? '' : '62px';
+      el.style.left = open ? '' : '0';
+      el.style.right = open ? '' : '0';
+      el.style.background = open ? '' : 'rgba(2,8,23,0.98)';
+      el.style.padding = open ? '' : '20px 28px';
+      el.style.borderBottom = open ? '' : '1px solid rgba(255,255,255,0.08)';
+      el.style.gap = open ? '' : '16px';
+    });
+  });
+</script>
+
+</body>
+</html>
