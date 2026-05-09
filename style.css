@@ -431,6 +431,28 @@ a { color: inherit; text-decoration: none; }
     padding: 5px 13px;
     border-radius: 100px;
 }
+.about-links {
+    display: flex;
+    gap: 14px;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.btn-linkedin {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    background: #0077b5;
+    color: white;
+    font-weight: 600;
+    font-size: 0.95rem;
+    padding: 13px 24px;
+    border-radius: 8px;
+    transition: background 0.2s, transform 0.15s;
+}
+.btn-linkedin:hover {
+    background: #005e93;
+    transform: translateY(-1px);
+}
 
 /* ===== PORTFOLIO ===== */
 .portfolio-section {
