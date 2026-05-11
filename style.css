@@ -813,12 +813,18 @@ a { color: inherit; text-decoration: none; }
     .stat-divider { display: none; }
     .footer-inner { flex-direction: column; text-align: center; }
 
-    .turnkey-card { padding: 24px 20px; }
+    .turnkey-card { padding: 24px 20px; grid-template-columns: 1fr !important; }
     .turnkey-left h3 { font-size: 1.3rem; }
     .turnkey-steps { flex-direction: column; align-items: flex-start; }
     .turnkey-steps span:nth-child(even) { display: none; }
+    .turnkey-right { flex-direction: column !important; }
+    .turnkey-stat { min-width: 0 !important; width: 100%; }
     .portfolio-grid { grid-template-columns: 1fr !important; }
     .services-grid { grid-template-columns: 1fr !important; }
     .portfolio-info { padding: 16px; }
     .why-grid { grid-template-columns: 1fr !important; }
+    .hero-inner { grid-template-columns: 1fr !important; }
+    .contact-inner { grid-template-columns: 1fr !important; }
+    .about-inner { grid-template-columns: 1fr !important; }
+    .form-row { grid-template-columns: 1fr !important; }
 }
