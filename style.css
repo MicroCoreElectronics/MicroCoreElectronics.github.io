@@ -15,7 +15,10 @@
     --shadow-hover: 0 4px 12px rgba(0,0,0,0.12), 0 12px 32px rgba(0,0,0,0.08);
 }
 
-html { scroll-behavior: smooth; }
+html {
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+}
 
 body {
     font-family: 'Inter', system-ui, -apple-system, sans-serif;
@@ -23,6 +26,8 @@ body {
     background: var(--bg);
     line-height: 1.6;
     -webkit-font-smoothing: antialiased;
+    overflow-x: hidden;
+    max-width: 100vw;
 }
 
 a { color: inherit; text-decoration: none; }
@@ -804,4 +809,28 @@ a { color: inherit; text-decoration: none; }
     .stat-item { padding: 12px 20px; }
     .stat-divider { display: none; }
     .footer-inner { flex-direction: column; text-align: center; }
+
+    /* Turnkey card mobile fix */
+    .turnkey-card {
+        grid-template-columns: 1fr;
+        padding: 28px 24px;
+        gap: 24px;
+    }
+    .turnkey-right {
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 10px;
+    }
+    .turnkey-stat {
+        flex: 1;
+        min-width: 130px;
+    }
+    .turnkey-steps {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .turnkey-steps span:nth-child(even) { display: none; }
+
+    /* Portfolio mobile fix */
+    .portfolio-info { padding: 16px; }
 }
