@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Industrial STM32 Controller — MicroCore Electronics</title>
+    <meta name="description" content="Modular industrial field controller based on STM32G474 with RS485, extensive GPIO, designed for harsh environments.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../style.css?v=5">
+</head>
+<body>
+
+    <!-- NAV -->
+    <header class="nav-header">
+        <div class="nav-inner">
+            <a href="../" class="logo">
+                <svg width="28" height="28" viewBox="0 0 36 36" fill="none">
+                    <rect x="10" y="10" width="16" height="16" rx="2" fill="#0f172a"/>
+                    <rect x="4" y="13" width="6" height="2" rx="1" fill="#0f172a"/>
+                    <rect x="4" y="17" width="6" height="2" rx="1" fill="#0f172a"/>
+                    <rect x="4" y="21" width="6" height="2" rx="1" fill="#0f172a"/>
+                    <rect x="26" y="13" width="6" height="2" rx="1" fill="#0f172a"/>
+                    <rect x="26" y="17" width="6" height="2" rx="1" fill="#0f172a"/>
+                    <rect x="26" y="21" width="6" height="2" rx="1" fill="#0f172a"/>
+                    <rect x="13" y="4" width="2" height="6" rx="1" fill="#0f172a"/>
+                    <rect x="17" y="4" width="2" height="6" rx="1" fill="#0f172a"/>
+                    <rect x="21" y="4" width="2" height="6" rx="1" fill="#0f172a"/>
+                    <rect x="13" y="26" width="2" height="6" rx="1" fill="#0f172a"/>
+                    <rect x="17" y="26" width="2" height="6" rx="1" fill="#0f172a"/>
+                    <rect x="21" y="26" width="2" height="6" rx="1" fill="#0f172a"/>
+                    <circle cx="18" cy="18" r="3" fill="#f97316"/>
+                </svg>
+            </a>
+            <nav class="nav-links">
+                <a href="../#services">Services</a>
+                <a href="../#about">About</a>
+                <a href="../#portfolio">Portfolio</a>
+                <a href="../#contact">Contact</a>
+            </nav>
+            <a href="../#contact" class="nav-cta">Get a Quote ↗</a>
+            <button class="nav-toggle" aria-label="Menu">
+                <span></span><span></span><span></span>
+            </button>
+        </div>
+    </header>
+
+    <!-- PROJECT HERO -->
+    <section class="project-hero">
+        <div class="container">
+            <div class="project-hero-inner">
+                <div class="project-hero-left">
+                    <span class="project-category">Industrial · STM32 · RS485</span>
+                    <h1>Industrial STM32<br>Controller</h1>
+                    <p>A robust, modular field controller based on STM32G474 for industrial automation — built to survive harsh electrical environments with RS485, isolated I/O, and wide-range power input.</p>
+                </div>
+                <div class="project-hero-img portfolio-industrial">
+                    <span>IND</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- PROJECT BODY -->
+    <section class="project-body">
+        <div class="container">
+            <div class="project-layout">
+
+                <!-- SIDEBAR -->
+                <aside class="project-sidebar">
+                    <div class="project-detail">
+                        <span>Client</span>
+                        <p>Industrial Automation OEM</p>
+                    </div>
+                    <div class="project-detail">
+                        <span>Year</span>
+                        <p>2023</p>
+                    </div>
+                    <div class="project-detail">
+                        <span>Role</span>
+                        <p>Hardware & Firmware Lead</p>
+                    </div>
+                    <div class="project-detail">
+                        <span>Tools</span>
+                        <p>Altium Designer<br>STM32CubeIDE<br>HAL / FreeRTOS</p>
+                    </div>
+                    <div class="project-detail">
+                        <span>Tags</span>
+                        <div class="project-tags-row" style="margin:8px 0 0;">
+                            <span>STM32</span><span>RS485</span><span>Industrial</span><span>DIN Rail</span><span>Modbus</span>
+                        </div>
+                    </div>
+                </aside>
+
+                <!-- MAIN CONTENT -->
+                <main class="project-main">
+                    <h2>The Challenge</h2>
+                    <p>An industrial automation OEM was building a family of field controllers for their product line — motor drives, valve actuators, and sensor hubs — all needing to communicate over RS485 Modbus RTU networks running through electrically noisy factory floors. They needed a common hardware platform that could be customized per product variant without a full redesign each time.</p>
+                    <p>Environmental requirements were stringent: the boards had to operate at −40°C to +85°C, withstand 8kV ESD on all I/O, survive 2kV transient spikes on the 24V supply line, and fit in a standard 6-module DIN rail enclosure.</p>
+
+                    <div class="project-img-grid">
+                        <div class="project-img-block portfolio-industrial">SCHEMATIC</div>
+                        <div class="project-img-block" style="background:linear-gradient(135deg,#713f12,#d97706)">LAYOUT</div>
+                    </div>
+
+                    <h2>The Process</h2>
+                    <p>The STM32G474RET6 was chosen for its combination of Cortex-M4 performance (170MHz), rich peripheral set (HRTIM, 5× ADC, 3× SPI, 4× UART), and availability in industrial temperature grade.</p>
+                    <ul>
+                        <li><strong>RS485 Interface:</strong> The ADM1490E half-duplex transceiver with fail-safe biasing drives the RS485 bus. TVS diodes (PESD1CAN) on both bus lines provide 8kV IEC 61000-4-2 ESD protection. A common-mode choke on the bus improves EMC in electrically noisy environments.</li>
+                        <li><strong>Power Supply:</strong> A MEAN WELL-compatible 24VDC input is handled by a TPS54340 buck converter delivering 3.3V at up to 3A. TVS clamping and bulk capacitance on the input handle the 2kV surge requirement. An isolated DC-DC (B0505S) powers the RS485 side galvanically isolated from the controller.</li>
+                        <li><strong>Isolated I/O:</strong> 8× digital inputs (optoisolated, compatible with 24VDC NPN/PNP sensors) and 4× open-collector outputs capable of driving 24VDC at 0.5A each. TLP785 optoisolators on all inputs.</li>
+                        <li><strong>Modular Architecture:</strong> A 40-pin expansion header on the edge of the board allows variant-specific daughter boards (motor drive, analog input, relay output) to be added without touching the base design.</li>
+                    </ul>
+                    <p>Firmware was written in C on STM32CubeIDE using HAL drivers and FreeRTOS. A Modbus RTU slave stack was implemented with a 1ms interrupt-driven character timeout. The modular code structure allowed each product variant's application code to be developed and tested independently against a stable firmware API.</p>
+
+                    <div class="project-img-full" style="background:linear-gradient(135deg,#713f12 0%,#b45309 60%,#d97706 100%)">
+                        ASSEMBLED CONTROLLER
+                    </div>
+
+                    <h2>The Result</h2>
+                    <p>The base controller passed all required EMC tests — ESD, EFT/burst, and surge — on first submission, with no PCB changes required after testing. The Modbus RTU implementation achieved error-free communication at 115200 baud on a 200m RS485 cable with 8 nodes on the bus.</p>
+                    <p>The modular architecture delivered exactly what the client needed: three product variants (motor drive controller, analog input hub, relay output module) were developed by adding daughter boards to the same validated base design, compressing the total variant development timeline from an estimated 9 months to under 4.</p>
+                    <ul>
+                        <li>Operating temperature: −40°C to +85°C (validated)</li>
+                        <li>ESD protection: ±8kV IEC 61000-4-2 on all I/O</li>
+                        <li>Surge protection: 2kV on 24V supply (IEC 61000-4-5)</li>
+                        <li>Modbus RTU: 9600–115200 baud, up to 247 nodes</li>
+                        <li>3 product variants from 1 base PCB</li>
+                    </ul>
+
+                    <div class="project-nav-row">
+                        <a href="wifi6-iot.html">← Previous: WiFi 6 IoT Platform</a>
+                        <a href="wireless-solenoid.html">Next Project: Wireless Solenoid Controller →</a>
+                    </div>
+                </main>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="container footer-inner">
+            <p class="footer-copy">© 2025 MicroCore Electronics</p>
+            <p class="footer-copy">Central Israel · info@microcoreelectronics.com · 058-744-4321</p>
+            <nav class="footer-nav">
+                <a href="../#services">Services</a>
+                <a href="../#about">About</a>
+                <a href="../#portfolio">Portfolio</a>
+                <a href="../#contact">Contact</a>
+            </nav>
+        </div>
+    </footer>
+
+    <script>
+        const toggle = document.querySelector('.nav-toggle');
+        const navLinks = document.querySelector('.nav-links');
+        toggle.addEventListener('click', () => navLinks.classList.toggle('open'));
+    </script>
+</body>
+</html>

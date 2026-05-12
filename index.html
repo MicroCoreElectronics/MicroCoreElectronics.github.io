@@ -8,7 +8,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css?v=4">
+    <link rel="stylesheet" href="style.css?v=5">
 </head>
 <body>
 
@@ -17,20 +17,20 @@
         <div class="nav-inner">
             <a href="/" class="logo">
                 <svg width="28" height="28" viewBox="0 0 36 36" fill="none">
-                    <rect x="10" y="10" width="16" height="16" rx="2" fill="#0a0a0a"/>
-                    <rect x="4" y="13" width="6" height="2" rx="1" fill="#0a0a0a"/>
-                    <rect x="4" y="17" width="6" height="2" rx="1" fill="#0a0a0a"/>
-                    <rect x="4" y="21" width="6" height="2" rx="1" fill="#0a0a0a"/>
-                    <rect x="26" y="13" width="6" height="2" rx="1" fill="#0a0a0a"/>
-                    <rect x="26" y="17" width="6" height="2" rx="1" fill="#0a0a0a"/>
-                    <rect x="26" y="21" width="6" height="2" rx="1" fill="#0a0a0a"/>
-                    <rect x="13" y="4" width="2" height="6" rx="1" fill="#0a0a0a"/>
-                    <rect x="17" y="4" width="2" height="6" rx="1" fill="#0a0a0a"/>
-                    <rect x="21" y="4" width="2" height="6" rx="1" fill="#0a0a0a"/>
-                    <rect x="13" y="26" width="2" height="6" rx="1" fill="#0a0a0a"/>
-                    <rect x="17" y="26" width="2" height="6" rx="1" fill="#0a0a0a"/>
-                    <rect x="21" y="26" width="2" height="6" rx="1" fill="#0a0a0a"/>
-                    <circle cx="18" cy="18" r="3" fill="white"/>
+                    <rect x="10" y="10" width="16" height="16" rx="2" fill="#0f172a"/>
+                    <rect x="4" y="13" width="6" height="2" rx="1" fill="#0f172a"/>
+                    <rect x="4" y="17" width="6" height="2" rx="1" fill="#0f172a"/>
+                    <rect x="4" y="21" width="6" height="2" rx="1" fill="#0f172a"/>
+                    <rect x="26" y="13" width="6" height="2" rx="1" fill="#0f172a"/>
+                    <rect x="26" y="17" width="6" height="2" rx="1" fill="#0f172a"/>
+                    <rect x="26" y="21" width="6" height="2" rx="1" fill="#0f172a"/>
+                    <rect x="13" y="4" width="2" height="6" rx="1" fill="#0f172a"/>
+                    <rect x="17" y="4" width="2" height="6" rx="1" fill="#0f172a"/>
+                    <rect x="21" y="4" width="2" height="6" rx="1" fill="#0f172a"/>
+                    <rect x="13" y="26" width="2" height="6" rx="1" fill="#0f172a"/>
+                    <rect x="17" y="26" width="2" height="6" rx="1" fill="#0f172a"/>
+                    <rect x="21" y="26" width="2" height="6" rx="1" fill="#0f172a"/>
+                    <circle cx="18" cy="18" r="3" fill="#f97316"/>
                 </svg>
             </a>
             <nav class="nav-links">
@@ -289,7 +289,7 @@
             </div>
             <div class="section-divider"></div>
             <div class="portfolio-grid">
-                <div class="portfolio-card">
+                <a href="projects/rf-receiver.html" class="portfolio-card">
                     <div class="portfolio-img portfolio-rf"><span>RF</span></div>
                     <div class="portfolio-meta">
                         <span class="portfolio-num">01</span>
@@ -298,8 +298,9 @@
                     <h4>2.4GHz RF Receiver Chain</h4>
                     <p>Signal chain for SDR: band-pass filter (2340–2530MHz), RF limiter, low-noise amplifier (22dB gain). Full link budget analysis from 1m to 500m range.</p>
                     <p class="portfolio-result">Enabled reliable long-range wireless detection without costly off-the-shelf RF modules.</p>
-                </div>
-                <div class="portfolio-card">
+                    <span class="portfolio-link">View Project →</span>
+                </a>
+                <a href="projects/jetson-orin.html" class="portfolio-card">
                     <div class="portfolio-img portfolio-compute"><span>AI</span></div>
                     <div class="portfolio-meta">
                         <span class="portfolio-num">02</span>
@@ -308,8 +309,9 @@
                     <h4>Jetson Orin Carrier Board</h4>
                     <p>Custom carrier board for NVIDIA Jetson Orin. PCIe x4 NVMe, 4-port USB 3.0, HDMI, multi-rail power management at 3.3V/4.7A.</p>
                     <p class="portfolio-result">Saved months of development vs. adapting a generic carrier board.</p>
-                </div>
-                <div class="portfolio-card">
+                    <span class="portfolio-link">View Project →</span>
+                </a>
+                <a href="projects/ble-biopotential.html" class="portfolio-card">
                     <div class="portfolio-img portfolio-medical"><span>BIO</span></div>
                     <div class="portfolio-meta">
                         <span class="portfolio-num">03</span>
@@ -318,8 +320,9 @@
                     <h4>BLE Biopotential Recorder</h4>
                     <p>8-channel biopotential acquisition using ADS1298 and nRF5340 dual-core BLE SoC. Runs on 2x AA batteries. Wireless data streaming.</p>
                     <p class="portfolio-result">Fully wireless, battery-powered medical-grade device ready for clinical trials.</p>
-                </div>
-                <div class="portfolio-card">
+                    <span class="portfolio-link">View Project →</span>
+                </a>
+                <a href="projects/wifi6-iot.html" class="portfolio-card">
                     <div class="portfolio-img portfolio-iot"><span>IoT</span></div>
                     <div class="portfolio-meta">
                         <span class="portfolio-num">04</span>
@@ -328,8 +331,9 @@
                     <h4>WiFi 6 IoT Sensor Platform</h4>
                     <p>Compact IoT device around ESP32-C6 (WiFi 6 + BLE 5). BQ24232 Li-Ion charger, TPS63021 buck/boost for stable 3.3V.</p>
                     <p class="portfolio-result">Designed for long-term field deployment with minimal BOM cost.</p>
-                </div>
-                <div class="portfolio-card">
+                    <span class="portfolio-link">View Project →</span>
+                </a>
+                <a href="projects/stm32-industrial.html" class="portfolio-card">
                     <div class="portfolio-img portfolio-industrial"><span>IND</span></div>
                     <div class="portfolio-meta">
                         <span class="portfolio-num">05</span>
@@ -338,8 +342,9 @@
                     <h4>Industrial STM32 Controller</h4>
                     <p>Modular field controller based on STM32G474 (Cortex-M4, 170MHz). RS485 via ADM1490E, extensive GPIO, for harsh environments.</p>
                     <p class="portfolio-result">Modular architecture reused across multiple product variants.</p>
-                </div>
-                <div class="portfolio-card">
+                    <span class="portfolio-link">View Project →</span>
+                </a>
+                <a href="projects/wireless-solenoid.html" class="portfolio-card">
                     <div class="portfolio-img portfolio-wireless"><span>BLE</span></div>
                     <div class="portfolio-meta">
                         <span class="portfolio-num">06</span>
@@ -348,7 +353,8 @@
                     <h4>Wireless Solenoid Controller</h4>
                     <p>BLE control module (nRF5340) driving solenoid valves via shift register. SPI pressure sensing, battery-powered with LDO regulation.</p>
                     <p class="portfolio-result">Eliminated wiring harness complexity, cutting installation time significantly.</p>
-                </div>
+                    <span class="portfolio-link">View Project →</span>
+                </a>
             </div>
         </div>
     </section>

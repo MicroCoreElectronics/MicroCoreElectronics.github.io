@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jetson Orin Carrier Board — MicroCore Electronics</title>
+    <meta name="description" content="Custom carrier board for NVIDIA Jetson Orin with PCIe x4 NVMe, 4-port USB 3.0, HDMI, and multi-rail power management.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../style.css?v=5">
+</head>
+<body>
+
+    <!-- NAV -->
+    <header class="nav-header">
+        <div class="nav-inner">
+            <a href="../" class="logo">
+                <svg width="28" height="28" viewBox="0 0 36 36" fill="none">
+                    <rect x="10" y="10" width="16" height="16" rx="2" fill="#0f172a"/>
+                    <rect x="4" y="13" width="6" height="2" rx="1" fill="#0f172a"/>
+                    <rect x="4" y="17" width="6" height="2" rx="1" fill="#0f172a"/>
+                    <rect x="4" y="21" width="6" height="2" rx="1" fill="#0f172a"/>
+                    <rect x="26" y="13" width="6" height="2" rx="1" fill="#0f172a"/>
+                    <rect x="26" y="17" width="6" height="2" rx="1" fill="#0f172a"/>
+                    <rect x="26" y="21" width="6" height="2" rx="1" fill="#0f172a"/>
+                    <rect x="13" y="4" width="2" height="6" rx="1" fill="#0f172a"/>
+                    <rect x="17" y="4" width="2" height="6" rx="1" fill="#0f172a"/>
+                    <rect x="21" y="4" width="2" height="6" rx="1" fill="#0f172a"/>
+                    <rect x="13" y="26" width="2" height="6" rx="1" fill="#0f172a"/>
+                    <rect x="17" y="26" width="2" height="6" rx="1" fill="#0f172a"/>
+                    <rect x="21" y="26" width="2" height="6" rx="1" fill="#0f172a"/>
+                    <circle cx="18" cy="18" r="3" fill="#f97316"/>
+                </svg>
+            </a>
+            <nav class="nav-links">
+                <a href="../#services">Services</a>
+                <a href="../#about">About</a>
+                <a href="../#portfolio">Portfolio</a>
+                <a href="../#contact">Contact</a>
+            </nav>
+            <a href="../#contact" class="nav-cta">Get a Quote ↗</a>
+            <button class="nav-toggle" aria-label="Menu">
+                <span></span><span></span><span></span>
+            </button>
+        </div>
+    </header>
+
+    <!-- PROJECT HERO -->
+    <section class="project-hero">
+        <div class="container">
+            <div class="project-hero-inner">
+                <div class="project-hero-left">
+                    <span class="project-category">Embedded Computing · PCB Design</span>
+                    <h1>Jetson Orin<br>Carrier Board</h1>
+                    <p>A custom carrier board for the NVIDIA Jetson Orin system-on-module, purpose-built for an AI-powered edge computing application requiring high-speed storage, multi-port USB, and tight power budgets.</p>
+                </div>
+                <div class="project-hero-img portfolio-compute">
+                    <span>AI</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- PROJECT BODY -->
+    <section class="project-body">
+        <div class="container">
+            <div class="project-layout">
+
+                <!-- SIDEBAR -->
+                <aside class="project-sidebar">
+                    <div class="project-detail">
+                        <span>Client</span>
+                        <p>AI Edge Computing Company</p>
+                    </div>
+                    <div class="project-detail">
+                        <span>Year</span>
+                        <p>2023</p>
+                    </div>
+                    <div class="project-detail">
+                        <span>Role</span>
+                        <p>Hardware Design Lead</p>
+                    </div>
+                    <div class="project-detail">
+                        <span>Tools</span>
+                        <p>Altium Designer<br>NVIDIA Jetson Design Guide<br>SI Analysis</p>
+                    </div>
+                    <div class="project-detail">
+                        <span>Tags</span>
+                        <div class="project-tags-row" style="margin:8px 0 0;">
+                            <span>Jetson</span><span>PCIe</span><span>USB3</span><span>HDMI</span><span>Power</span>
+                        </div>
+                    </div>
+                </aside>
+
+                <!-- MAIN CONTENT -->
+                <main class="project-main">
+                    <h2>The Challenge</h2>
+                    <p>The client was building an AI-powered edge device around the NVIDIA Jetson Orin NX module and needed a carrier board tailored to their application. Generic development carriers were either too large for their enclosure or lacked specific interfaces — in particular, they needed PCIe x4 for an NVMe SSD, four USB 3.0 ports for peripherals, and HDMI for a display output, all within a compact form factor.</p>
+                    <p>Power was a significant constraint: the Jetson Orin requires carefully sequenced multi-rail supply, and the system needed to operate from a 12V input while providing the module's 5V/4.7A main rail plus 3.3V and 1.8V auxiliary rails.</p>
+
+                    <div class="project-img-grid">
+                        <div class="project-img-block portfolio-compute">SCHEMATIC</div>
+                        <div class="project-img-block" style="background:linear-gradient(135deg,#312e81,#7c3aed)">LAYOUT</div>
+                    </div>
+
+                    <h2>The Process</h2>
+                    <p>The design started with a thorough review of the NVIDIA Jetson Carrier Board Design Guide, which specifies the 260-pin SO-DIMM connector requirements, power-up sequencing, and signal integrity guidelines for PCIe and USB 3.x lanes.</p>
+                    <ul>
+                        <li><strong>Power Architecture:</strong> A TPS54620 synchronous buck converter provides the 5V main rail at up to 6A. A secondary TPS62130 handles the 3.3V rail. Power sequencing was implemented with a TPS3840 supervisor IC to meet Jetson Orin's strict sequencing requirements.</li>
+                        <li><strong>PCIe x4:</strong> Four differential PCIe Gen3 pairs routed as controlled-impedance (85Ω differential) traces. Length-matched within 10 mil across all four lanes. AC coupling caps placed per NVIDIA guidelines.</li>
+                        <li><strong>USB 3.0 x4:</strong> A VL817 USB 3.0 hub splits two USB 3.0 ports from the module into four downstream ports. SuperSpeed pairs routed at 90Ω differential.</li>
+                        <li><strong>HDMI:</strong> HDMI 2.0 output via SN75DP130 retimer to improve signal integrity at 6Gbps data rate over the board-to-connector path.</li>
+                    </ul>
+                    <p>The 6-layer PCB was laid out with dedicated signal, power, and ground planes. Via stubs on high-speed signals were back-drilled to remove stub resonances at PCIe Gen3 frequencies.</p>
+
+                    <div class="project-img-full" style="background:linear-gradient(135deg,#312e81 0%,#6d28d9 60%,#7c3aed 100%)">
+                        ASSEMBLED BOARD
+                    </div>
+
+                    <h2>The Result</h2>
+                    <p>The carrier board came up successfully on first spin with no hardware rework required. PCIe NVMe was detected and operational immediately; USB 3.0 devices enumerated correctly on all four ports. HDMI displayed at 1080p60 without issues.</p>
+                    <p>The compact board (115 × 80mm) fit perfectly in the client's enclosure, saving several months of development time compared to adapting a generic carrier. The client used this design as the basis for their production hardware, which went to contract manufacturing within six weeks of prototype validation.</p>
+                    <ul>
+                        <li>PCIe Gen3 x4 NVMe: 2.8 GB/s read, 2.1 GB/s write measured</li>
+                        <li>USB 3.0: 4 × USB-A ports, 430 MB/s throughput each</li>
+                        <li>Power: 12V input, multi-rail output, &lt;300mV ripple</li>
+                        <li>Form factor: 115 × 80mm — custom enclosure fit</li>
+                    </ul>
+
+                    <div class="project-nav-row">
+                        <a href="rf-receiver.html">← Previous: 2.4GHz RF Receiver</a>
+                        <a href="ble-biopotential.html">Next Project: BLE Biopotential Recorder →</a>
+                    </div>
+                </main>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="container footer-inner">
+            <p class="footer-copy">© 2025 MicroCore Electronics</p>
+            <p class="footer-copy">Central Israel · info@microcoreelectronics.com · 058-744-4321</p>
+            <nav class="footer-nav">
+                <a href="../#services">Services</a>
+                <a href="../#about">About</a>
+                <a href="../#portfolio">Portfolio</a>
+                <a href="../#contact">Contact</a>
+            </nav>
+        </div>
+    </footer>
+
+    <script>
+        const toggle = document.querySelector('.nav-toggle');
+        const navLinks = document.querySelector('.nav-links');
+        toggle.addEventListener('click', () => navLinks.classList.toggle('open'));
+    </script>
+</body>
+</html>
