@@ -1,14 +1,14 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>2.4GHz RF Receiver Chain — MicroCore Electronics</title>
+    <title>2.4GHz RF Receiver Chain â€” MicroCore Electronics</title>
     <meta name="description" content="Custom RF receiver chain design for SDR: band-pass filter, RF limiter, and low-noise amplifier with 22dB gain.">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="../style.css?v=5">
+    <link rel="stylesheet" href="../style.css?v=6">
 </head>
 <body>
 
@@ -30,7 +30,7 @@
                     <rect x="13" y="26" width="2" height="6" rx="1" fill="#0f172a"/>
                     <rect x="17" y="26" width="2" height="6" rx="1" fill="#0f172a"/>
                     <rect x="21" y="26" width="2" height="6" rx="1" fill="#0f172a"/>
-                    <circle cx="18" cy="18" r="3" fill="#f97316"/>
+                    <circle cx="18" cy="18" r="3" fill="#16a34a"/>
                 </svg>
             </a>
             <nav class="nav-links">
@@ -39,7 +39,7 @@
                 <a href="../#portfolio">Portfolio</a>
                 <a href="../#contact">Contact</a>
             </nav>
-            <a href="../#contact" class="nav-cta">Get a Quote ↗</a>
+            <a href="../#contact" class="nav-cta">Get a Quote â†—</a>
             <button class="nav-toggle" aria-label="Menu">
                 <span></span><span></span><span></span>
             </button>
@@ -51,7 +51,7 @@
         <div class="container">
             <div class="project-hero-inner">
                 <div class="project-hero-left">
-                    <span class="project-category">RF Design · Hardware</span>
+                    <span class="project-category">RF Design Â· Hardware</span>
                     <h1>2.4GHz RF<br>Receiver Chain</h1>
                     <p>A complete signal chain for software-defined radio: band-pass filter, RF limiter, and low-noise amplifier optimized for the 2.4GHz ISM band.</p>
                 </div>
@@ -96,8 +96,8 @@
                 <!-- MAIN CONTENT -->
                 <main class="project-main">
                     <h2>The Challenge</h2>
-                    <p>The client needed to reliably detect and decode 2.4GHz wireless signals at distances from 1 meter up to 500 meters — a 500x dynamic range — using a software-defined radio (SDR) receiver. Off-the-shelf RF front ends were either too expensive, too large, or lacked the sensitivity required for the application.</p>
-                    <p>The key constraints were demanding: noise figure below 3dB, gain of at least 20dB, and sufficient filtering to reject out-of-band interference from nearby WiFi and Bluetooth transmitters — all in a compact footprint suitable for a battery-powered enclosure.</p>
+                    <p>The client needed to reliably detect and decode 2.4GHz wireless signals at distances from 1 meter up to 500 meters â€” a 500x dynamic range â€” using a software-defined radio (SDR) receiver. Off-the-shelf RF front ends were either too expensive, too large, or lacked the sensitivity required for the application.</p>
+                    <p>The key constraints were demanding: noise figure below 3dB, gain of at least 20dB, and sufficient filtering to reject out-of-band interference from nearby WiFi and Bluetooth transmitters â€” all in a compact footprint suitable for a battery-powered enclosure.</p>
 
                     <div class="project-img-grid">
                         <div class="project-img-block portfolio-rf">SCHEMATIC</div>
@@ -107,9 +107,9 @@
                     <h2>The Process</h2>
                     <p>The design was structured as a three-stage signal chain, each stage addressing a specific requirement:</p>
                     <ul>
-                        <li><strong>Stage 1 — Band-Pass Filter:</strong> A 5-pole LC BPF centered at 2440MHz with 190MHz bandwidth (2340–2530MHz). Designed in ADS to achieve &gt;35dB rejection outside the passband, protecting the sensitive downstream components from strong out-of-band signals.</li>
-                        <li><strong>Stage 2 — RF Limiter:</strong> A PIN diode-based limiter clamping input power below −5dBm to protect the LNA from large interferers. Chosen for its fast response time and minimal insertion loss in normal operation.</li>
-                        <li><strong>Stage 3 — Low-Noise Amplifier:</strong> The LNA stage provides 22dB gain with a noise figure of 1.8dB. Impedance matching networks on input and output were tuned on a VNA after PCB assembly to hit target S-parameters.</li>
+                        <li><strong>Stage 1 â€” Band-Pass Filter:</strong> A 5-pole LC BPF centered at 2440MHz with 190MHz bandwidth (2340â€“2530MHz). Designed in ADS to achieve &gt;35dB rejection outside the passband, protecting the sensitive downstream components from strong out-of-band signals.</li>
+                        <li><strong>Stage 2 â€” RF Limiter:</strong> A PIN diode-based limiter clamping input power below âˆ’5dBm to protect the LNA from large interferers. Chosen for its fast response time and minimal insertion loss in normal operation.</li>
+                        <li><strong>Stage 3 â€” Low-Noise Amplifier:</strong> The LNA stage provides 22dB gain with a noise figure of 1.8dB. Impedance matching networks on input and output were tuned on a VNA after PCB assembly to hit target S-parameters.</li>
                     </ul>
                     <p>The PCB was laid out in Altium with careful attention to RF grounding: a solid ground plane underneath the signal path, short transmission lines, and SMA connectors at input and output. A full link budget analysis confirmed the system could achieve the required 500m range with 6dB margin.</p>
 
@@ -118,10 +118,10 @@
                     </div>
 
                     <h2>The Result</h2>
-                    <p>The fabricated board was brought up successfully on first spin. VNA measurements confirmed the BPF passband response matched simulation within 5MHz, and the LNA achieved 21.8dB gain with a measured noise figure of 1.95dB — both within specification.</p>
+                    <p>The fabricated board was brought up successfully on first spin. VNA measurements confirmed the BPF passband response matched simulation within 5MHz, and the LNA achieved 21.8dB gain with a measured noise figure of 1.95dB â€” both within specification.</p>
                     <p>The complete receiver chain enabled reliable long-range wireless detection at ranges far beyond what off-the-shelf RF modules could achieve, at roughly one-quarter the component cost. The design has since been integrated into a production PCB that is manufactured in volume.</p>
                     <ul>
-                        <li>BPF passband: 2340–2530MHz, insertion loss &lt;2dB</li>
+                        <li>BPF passband: 2340â€“2530MHz, insertion loss &lt;2dB</li>
                         <li>LNA gain: 21.8dB measured, NF: 1.95dB</li>
                         <li>Out-of-band rejection: &gt;38dB</li>
                         <li>Detection range: reliably 500m in open field</li>
@@ -129,8 +129,8 @@
 
                     <!-- PREV / NEXT NAV -->
                     <div class="project-nav-row">
-                        <a href="../#portfolio">← Back to Portfolio</a>
-                        <a href="jetson-orin.html">Next Project: Jetson Orin Carrier →</a>
+                        <a href="../#portfolio">â† Back to Portfolio</a>
+                        <a href="jetson-orin.html">Next Project: Jetson Orin Carrier â†’</a>
                     </div>
                 </main>
             </div>
@@ -140,8 +140,8 @@
     <!-- FOOTER -->
     <footer class="footer">
         <div class="container footer-inner">
-            <p class="footer-copy">© 2025 MicroCore Electronics</p>
-            <p class="footer-copy">Central Israel · info@microcoreelectronics.com · 058-744-4321</p>
+            <p class="footer-copy">Â© 2025 MicroCore Electronics</p>
+            <p class="footer-copy">Central Israel Â· info@microcoreelectronics.com Â· 058-744-4321</p>
             <nav class="footer-nav">
                 <a href="../#services">Services</a>
                 <a href="../#about">About</a>
@@ -158,3 +158,4 @@
     </script>
 </body>
 </html>
+

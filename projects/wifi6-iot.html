@@ -1,14 +1,14 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>WiFi 6 IoT Sensor Platform — MicroCore Electronics</title>
+    <title>WiFi 6 IoT Sensor Platform â€” MicroCore Electronics</title>
     <meta name="description" content="Compact IoT sensor platform built around ESP32-C6 with WiFi 6, BLE 5, Li-Ion charging, and buck/boost power management.">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="../style.css?v=5">
+    <link rel="stylesheet" href="../style.css?v=6">
 </head>
 <body>
 
@@ -30,7 +30,7 @@
                     <rect x="13" y="26" width="2" height="6" rx="1" fill="#0f172a"/>
                     <rect x="17" y="26" width="2" height="6" rx="1" fill="#0f172a"/>
                     <rect x="21" y="26" width="2" height="6" rx="1" fill="#0f172a"/>
-                    <circle cx="18" cy="18" r="3" fill="#f97316"/>
+                    <circle cx="18" cy="18" r="3" fill="#16a34a"/>
                 </svg>
             </a>
             <nav class="nav-links">
@@ -39,7 +39,7 @@
                 <a href="../#portfolio">Portfolio</a>
                 <a href="../#contact">Contact</a>
             </nav>
-            <a href="../#contact" class="nav-cta">Get a Quote ↗</a>
+            <a href="../#contact" class="nav-cta">Get a Quote â†—</a>
             <button class="nav-toggle" aria-label="Menu">
                 <span></span><span></span><span></span>
             </button>
@@ -51,7 +51,7 @@
         <div class="container">
             <div class="project-hero-inner">
                 <div class="project-hero-left">
-                    <span class="project-category">IoT · Power Management · ESP32</span>
+                    <span class="project-category">IoT Â· Power Management Â· ESP32</span>
                     <h1>WiFi 6 IoT<br>Sensor Platform</h1>
                     <p>A compact, low-cost IoT sensor node built around the ESP32-C6, designed for long-term field deployment with integrated Li-Ion charging and efficient power management.</p>
                 </div>
@@ -97,7 +97,7 @@
                 <main class="project-main">
                     <h2>The Challenge</h2>
                     <p>The client needed to deploy hundreds of wireless sensor nodes across an industrial facility to monitor temperature, humidity, and vibration in real time. The nodes had to connect to an existing WiFi 6 infrastructure, last at least 12 months on a battery charge in low-activity mode, and cost under $15 in BOM at 500-unit volumes.</p>
-                    <p>The design also needed to support USB-C charging and OTA firmware updates over WiFi — without a separate programming interface, since the nodes would be sealed once deployed.</p>
+                    <p>The design also needed to support USB-C charging and OTA firmware updates over WiFi â€” without a separate programming interface, since the nodes would be sealed once deployed.</p>
 
                     <div class="project-img-grid">
                         <div class="project-img-block portfolio-iot">SCHEMATIC</div>
@@ -105,33 +105,33 @@
                     </div>
 
                     <h2>The Process</h2>
-                    <p>The ESP32-C6 was selected as the heart of the design — it is the first Espressif SoC with native WiFi 6 (802.11ax) support alongside Bluetooth 5 LE and IEEE 802.15.4, making it ideal for a multi-protocol IoT node.</p>
+                    <p>The ESP32-C6 was selected as the heart of the design â€” it is the first Espressif SoC with native WiFi 6 (802.11ax) support alongside Bluetooth 5 LE and IEEE 802.15.4, making it ideal for a multi-protocol IoT node.</p>
                     <ul>
-                        <li><strong>Power Architecture:</strong> A TPS63021 buck/boost converter maintains a stable 3.3V output from a Li-Ion cell ranging 3.0–4.2V, ensuring stable operation across the full battery charge curve. A BQ24232 Li-Ion charger handles USB-C power input with 500mA charge current and power-path management so the system runs directly from USB while charging.</li>
-                        <li><strong>Sleep Strategy:</strong> The ESP32-C6 deep-sleep current is under 15µA. The firmware wakes every 10 minutes, takes sensor readings, transmits a short packet, and goes back to sleep. On a 2000mAh cell this yields over 14 months of operation per charge cycle.</li>
+                        <li><strong>Power Architecture:</strong> A TPS63021 buck/boost converter maintains a stable 3.3V output from a Li-Ion cell ranging 3.0â€“4.2V, ensuring stable operation across the full battery charge curve. A BQ24232 Li-Ion charger handles USB-C power input with 500mA charge current and power-path management so the system runs directly from USB while charging.</li>
+                        <li><strong>Sleep Strategy:</strong> The ESP32-C6 deep-sleep current is under 15ÂµA. The firmware wakes every 10 minutes, takes sensor readings, transmits a short packet, and goes back to sleep. On a 2000mAh cell this yields over 14 months of operation per charge cycle.</li>
                         <li><strong>Sensors:</strong> The board includes a BME688 (temperature, humidity, pressure, gas sensing) and ADXL345 (3-axis vibration/acceleration) connected via I2C and SPI respectively.</li>
-                        <li><strong>PCB:</strong> Two-layer design, 55 × 35mm, optimized for low BOM cost while keeping the ESP32-C6 antenna area clear of ground planes per Espressif antenna placement guidelines.</li>
+                        <li><strong>PCB:</strong> Two-layer design, 55 Ã— 35mm, optimized for low BOM cost while keeping the ESP32-C6 antenna area clear of ground planes per Espressif antenna placement guidelines.</li>
                     </ul>
-                    <p>Firmware was built on ESP-IDF with FreeRTOS. A custom WiFi 6 TWT (Target Wake Time) schedule was negotiated with the access point to align radio wake times with sensor acquisition — a key factor in achieving the &lt;20µA average current target.</p>
+                    <p>Firmware was built on ESP-IDF with FreeRTOS. A custom WiFi 6 TWT (Target Wake Time) schedule was negotiated with the access point to align radio wake times with sensor acquisition â€” a key factor in achieving the &lt;20ÂµA average current target.</p>
 
                     <div class="project-img-full" style="background:linear-gradient(135deg,#7c2d12 0%,#c2410c 60%,#ea580c 100%)">
                         ASSEMBLED NODE
                     </div>
 
                     <h2>The Result</h2>
-                    <p>The prototype met all design targets. BOM cost at 500 units came in at $12.80, comfortably under budget. Average current in the field deployment profile measured 18µA — yielding over 13 months of battery life in practice.</p>
+                    <p>The prototype met all design targets. BOM cost at 500 units came in at $12.80, comfortably under budget. Average current in the field deployment profile measured 18ÂµA â€” yielding over 13 months of battery life in practice.</p>
                     <p>OTA firmware updates worked reliably via Espressif's standard OTA partition scheme. The client deployed a 50-unit pilot across their facility within three months of prototype handoff, and the nodes have been running continuously without issues.</p>
                     <ul>
                         <li>BOM cost: $12.80 at 500 units (target: &lt;$15)</li>
-                        <li>Average current (field profile): 18µA</li>
+                        <li>Average current (field profile): 18ÂµA</li>
                         <li>Battery life: ~13 months on 2000mAh Li-Ion</li>
                         <li>WiFi 6 TWT-assisted power saving: 40% better than WiFi 4 equivalent</li>
-                        <li>Form factor: 55 × 35mm, 2-layer PCB</li>
+                        <li>Form factor: 55 Ã— 35mm, 2-layer PCB</li>
                     </ul>
 
                     <div class="project-nav-row">
-                        <a href="ble-biopotential.html">← Previous: BLE Biopotential Recorder</a>
-                        <a href="stm32-industrial.html">Next Project: STM32 Industrial Controller →</a>
+                        <a href="ble-biopotential.html">â† Previous: BLE Biopotential Recorder</a>
+                        <a href="stm32-industrial.html">Next Project: STM32 Industrial Controller â†’</a>
                     </div>
                 </main>
             </div>
@@ -141,8 +141,8 @@
     <!-- FOOTER -->
     <footer class="footer">
         <div class="container footer-inner">
-            <p class="footer-copy">© 2025 MicroCore Electronics</p>
-            <p class="footer-copy">Central Israel · info@microcoreelectronics.com · 058-744-4321</p>
+            <p class="footer-copy">Â© 2025 MicroCore Electronics</p>
+            <p class="footer-copy">Central Israel Â· info@microcoreelectronics.com Â· 058-744-4321</p>
             <nav class="footer-nav">
                 <a href="../#services">Services</a>
                 <a href="../#about">About</a>
@@ -159,3 +159,4 @@
     </script>
 </body>
 </html>
+
