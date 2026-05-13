@@ -536,12 +536,12 @@ a { color: inherit; text-decoration: none; }
     color: rgba(255,255,255,0.5);
     letter-spacing: 0.12em;
     margin-bottom: 16px;
-    filter: grayscale(40%);
+    filter: grayscale(100%) brightness(1.3);
     transition: filter 0.5s ease, transform 0.4s ease;
     overflow: hidden;
 }
 .portfolio-card:hover .portfolio-img {
-    filter: grayscale(0%);
+    filter: grayscale(0%) brightness(1);
     transform: scale(1.02);
 }
 .portfolio-rf       { background: linear-gradient(135deg, #1e3a5f 0%, #2563eb 100%); }
