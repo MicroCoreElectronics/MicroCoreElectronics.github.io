@@ -8,7 +8,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css?v=7">
+    <link rel="stylesheet" href="style.css?v=8">
 </head>
 <body>
 
@@ -426,17 +426,58 @@
     </footer>
 
     <script>
+        // Mobile nav toggle
         const toggle = document.querySelector('.nav-toggle');
         const navLinks = document.querySelector('.nav-links');
         toggle.addEventListener('click', () => navLinks.classList.toggle('open'));
 
+        // Staggered delays: every group of 3 gets 0 / 0.1 / 0.2s offset
+        document.querySelectorAll('.services-grid .service-card').forEach((el, i) => {
+            el.style.setProperty('--stagger', `${(i % 3) * 0.1}s`);
+        });
+        document.querySelectorAll('.portfolio-grid .portfolio-card').forEach((el, i) => {
+            el.style.setProperty('--stagger', `${(i % 3) * 0.12}s`);
+        });
+        document.querySelectorAll('.why-grid .why-card').forEach((el, i) => {
+            el.style.setProperty('--stagger', `${i * 0.1}s`);
+        });
+
+        // Scroll reveal observer
         const observer = new IntersectionObserver((entries) => {
             entries.forEach(e => { if (e.isIntersecting) e.target.classList.add('visible'); });
-        }, { threshold: 0.08 });
+        }, { threshold: 0.07 });
         document.querySelectorAll('.service-card, .why-card, .portfolio-card').forEach(el => {
             el.classList.add('fade-in');
             observer.observe(el);
         });
+
+        // Animated counters for hero stats
+        function animateCount(el, target, suffix, duration) {
+            let startTime = null;
+            const step = (ts) => {
+                if (!startTime) startTime = ts;
+                const progress = Math.min((ts - startTime) / duration, 1);
+                const eased = 1 - Math.pow(1 - progress, 3); // ease-out cubic
+                el.textContent = Math.floor(eased * target) + suffix;
+                if (progress < 1) requestAnimationFrame(step);
+            };
+            requestAnimationFrame(step);
+        }
+
+        const heroStats = document.querySelector('.hero-stats');
+        if (heroStats) {
+            const statsObserver = new IntersectionObserver((entries) => {
+                entries.forEach(e => {
+                    if (e.isIntersecting) {
+                        const strongs = e.target.querySelectorAll('.hero-stat strong');
+                        if (strongs[0]) animateCount(strongs[0], 5, '+', 1000);
+                        if (strongs[1]) animateCount(strongs[1], 20, '+', 1300);
+                        statsObserver.disconnect();
+                    }
+                });
+            }, { threshold: 0.6 });
+            statsObserver.observe(heroStats);
+        }
     </script>
 </body>
 </html>
