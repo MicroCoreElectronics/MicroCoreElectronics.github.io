@@ -1034,4 +1034,6 @@ a { color: inherit; text-decoration: none; }
     .project-img-block:last-child { border-bottom: none !important; }
     .project-nav-row { flex-direction: column; gap: 16px; }
     .project-img-full img { height: auto; object-fit: contain; }
+    .project-hero-img { max-height: 260px; }
+    .project-hero-img img { min-height: unset; height: 260px; }
 }
