@@ -55,8 +55,8 @@
                     <h1>Jetson Orin<br>Carrier Board</h1>
                     <p>A custom carrier board for the NVIDIA Jetson Orin system-on-module, purpose-built for an AI-powered edge computing application requiring high-speed storage, multi-port USB, and tight power budgets.</p>
                 </div>
-                <div class="project-hero-img portfolio-compute">
-                    <span>AI</span>
+                <div class="project-hero-img">
+                    <img src="../Photos/AI/ON_BENCH.jpg" alt="Jetson Orin Carrier Board on the bench">
                 </div>
             </div>
         </div>
@@ -100,22 +100,26 @@
                     <p>Power was a significant constraint: the Jetson Orin requires carefully sequenced multi-rail supply, and the system needed to operate from a 12V input while providing the module's 5V/4.7A main rail plus 3.3V and 1.8V auxiliary rails.</p>
 
                     <div class="project-img-grid">
-                        <div class="project-img-block portfolio-compute">SCHEMATIC</div>
-                        <div class="project-img-block" style="background:linear-gradient(135deg,#312e81,#7c3aed)">LAYOUT</div>
+                        <div class="project-img-block">
+                            <img src="../Photos/AI/scheme_layout.jpg" alt="Jetson Orin carrier board schematic and layout">
+                        </div>
+                        <div class="project-img-block">
+                            <img src="../Photos/AI/PCB_PIC.jpg" alt="Jetson Orin carrier board PCB">
+                        </div>
                     </div>
 
                     <h2>The Process</h2>
                     <p>The design started with a thorough review of the NVIDIA Jetson Carrier Board Design Guide, which specifies the 260-pin SO-DIMM connector requirements, power-up sequencing, and signal integrity guidelines for PCIe and USB 3.x lanes.</p>
                     <ul>
                         <li><strong>Power Architecture:</strong> A TPS54620 synchronous buck converter provides the 5V main rail at up to 6A. A secondary TPS62130 handles the 3.3V rail. Power sequencing was implemented with a TPS3840 supervisor IC to meet Jetson Orin's strict sequencing requirements.</li>
-                        <li><strong>PCIe x4:</strong> Four differential PCIe Gen3 pairs routed as controlled-impedance (85Î© differential) traces. Length-matched within 10 mil across all four lanes. AC coupling caps placed per NVIDIA guidelines.</li>
-                        <li><strong>USB 3.0 x4:</strong> A VL817 USB 3.0 hub splits two USB 3.0 ports from the module into four downstream ports. SuperSpeed pairs routed at 90Î© differential.</li>
+                        <li><strong>PCIe x4:</strong> Four differential PCIe Gen3 pairs routed as controlled-impedance (85Ω differential) traces. Length-matched within 10 mil across all four lanes. AC coupling caps placed per NVIDIA guidelines.</li>
+                        <li><strong>USB 3.0 x4:</strong> A VL817 USB 3.0 hub splits two USB 3.0 ports from the module into four downstream ports. SuperSpeed pairs routed at 90Ω differential.</li>
                         <li><strong>HDMI:</strong> HDMI 2.0 output via SN75DP130 retimer to improve signal integrity at 6Gbps data rate over the board-to-connector path.</li>
                     </ul>
                     <p>The 6-layer PCB was laid out with dedicated signal, power, and ground planes. Via stubs on high-speed signals were back-drilled to remove stub resonances at PCIe Gen3 frequencies.</p>
 
-                    <div class="project-img-full" style="background:linear-gradient(135deg,#312e81 0%,#6d28d9 60%,#7c3aed 100%)">
-                        ASSEMBLED BOARD
+                    <div class="project-img-full">
+                        <img src="../Photos/AI/PCB_PIC.jpg" alt="Jetson Orin carrier board — full view">
                     </div>
 
                     <h2>The Result</h2>

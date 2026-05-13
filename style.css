@@ -894,6 +894,31 @@ a { color: inherit; text-decoration: none; }
     color: rgba(255,255,255,0.4);
     font-weight: 600;
     letter-spacing: 0.08em;
+    overflow: hidden;
+}
+.project-img-full img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+.project-img-block {
+    overflow: hidden;
+}
+.project-img-block img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+.project-hero-img {
+    overflow: hidden;
+}
+.project-hero-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
 }
 .project-tags-row {
     display: flex;
