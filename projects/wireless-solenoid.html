@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Wireless Solenoid Controller â€” MicroCore Electronics</title>
+    <title>Wireless Solenoid Controller — MicroCore Electronics</title>
     <meta name="description" content="BLE-controlled solenoid valve driver using nRF5340, shift registers, SPI pressure sensing, and battery power management.">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -39,7 +39,7 @@
                 <a href="../#portfolio">Portfolio</a>
                 <a href="../#contact">Contact</a>
             </nav>
-            <a href="../#contact" class="nav-cta">Get a Quote â†—</a>
+            <a href="../#contact" class="nav-cta">Get a Quote ↗</a>
             <button class="nav-toggle" aria-label="Menu">
                 <span></span><span></span><span></span>
             </button>
@@ -51,9 +51,9 @@
         <div class="container">
             <div class="project-hero-inner">
                 <div class="project-hero-left">
-                    <span class="project-category">BLE Â· Power Â· Solenoid Drive</span>
+                    <span class="project-category">BLE · Power · Solenoid Drive</span>
                     <h1>Wireless Solenoid<br>Controller</h1>
-                    <p>A battery-powered BLE control module that remotely drives solenoid valve arrays â€” replacing a complex wiring harness with a single compact wireless board.</p>
+                    <p>A battery-powered BLE control module that remotely drives solenoid valve arrays — replacing a complex wiring harness with a single compact wireless board.</p>
                 </div>
                 <div class="project-hero-img portfolio-wireless">
                     <span>BLE</span>
@@ -96,8 +96,8 @@
                 <!-- MAIN CONTENT -->
                 <main class="project-main">
                     <h2>The Challenge</h2>
-                    <p>The client manufactured a fluid control manifold system in which a central controller needed to independently actuate up to 16 solenoid valves. In the existing wired design, a thick multi-conductor harness ran from the controller cabinet to the manifold â€” expensive to manufacture, prone to connector failures, and difficult to route in tight installations.</p>
-                    <p>The goal was to replace the wiring harness with a wireless module mounted directly on the manifold, controlled over BLE from the main controller. The module also needed to read system pressure from a sensor via SPI, run on a Li-Ion battery pack for at least 24 hours of continuous operation, and fit within the existing manifold footprint (80 Ã— 50mm).</p>
+                    <p>The client manufactured a fluid control manifold system in which a central controller needed to independently actuate up to 16 solenoid valves. In the existing wired design, a thick multi-conductor harness ran from the controller cabinet to the manifold — expensive to manufacture, prone to connector failures, and difficult to route in tight installations.</p>
+                    <p>The goal was to replace the wiring harness with a wireless module mounted directly on the manifold, controlled over BLE from the main controller. The module also needed to read system pressure from a sensor via SPI, run on a Li-Ion battery pack for at least 24 hours of continuous operation, and fit within the existing manifold footprint (80 × 50mm).</p>
 
                     <div class="project-img-grid">
                         <div class="project-img-block portfolio-wireless">SCHEMATIC</div>
@@ -107,8 +107,8 @@
                     <h2>The Process</h2>
                     <p>The design needed to balance three competing demands: the high current draw of 16 solenoid channels, BLE radio sensitivity requirements, and long battery life.</p>
                     <ul>
-                        <li><strong>MCU &amp; BLE:</strong> The nRF5340 dual-core SoC was chosen â€” the network core handles BLE 5.2 while the application core manages solenoid scheduling and sensor acquisition. A custom BLE GATT service exposes valve control and pressure reading to the central controller.</li>
-                        <li><strong>Solenoid Drive:</strong> Two cascaded 74HC595 8-bit shift registers expand a single SPI bus into 16 independent output channels. Each output drives a TBD62083 Darlington transistor array capable of 500mA per channel at 24V â€” sufficient for the client's latching solenoids. Freewheeling diodes on all outputs handle back-EMF.</li>
+                        <li><strong>MCU &amp; BLE:</strong> The nRF5340 dual-core SoC was chosen — the network core handles BLE 5.2 while the application core manages solenoid scheduling and sensor acquisition. A custom BLE GATT service exposes valve control and pressure reading to the central controller.</li>
+                        <li><strong>Solenoid Drive:</strong> Two cascaded 74HC595 8-bit shift registers expand a single SPI bus into 16 independent output channels. Each output drives a TBD62083 Darlington transistor array capable of 500mA per channel at 24V — sufficient for the client's latching solenoids. Freewheeling diodes on all outputs handle back-EMF.</li>
                         <li><strong>Pressure Sensing:</strong> An MS5803-14BA SPI pressure sensor provides 14-bar range with 0.6mbar resolution. The sensor shares the SPI bus with the shift registers via chip select.</li>
                         <li><strong>Power:</strong> A 2-cell 7.4V Li-Ion pack feeds a TPS54332 buck converter down to 5V (solenoid drive), with a secondary LDO (LM1117) generating 3.3V for the nRF5340 and sensor. The nRF5340's 2.4GHz antenna keep-out area was respected by routing all high-current traces along the board periphery.</li>
                     </ul>
@@ -119,20 +119,20 @@
                     </div>
 
                     <h2>The Result</h2>
-                    <p>The wireless module successfully replaced the wired harness in field trials. BLE link reliability was excellent â€” zero dropped commands in 48 hours of continuous testing at 5m range with one concrete wall between controller and manifold. The pressure sensor readings were accurate to within 1.2mbar against a reference gauge.</p>
-                    <p>Battery life measured 31 hours with all 16 valves cycling at a 50% duty cycle â€” significantly exceeding the 24-hour specification. The module's compact 78 Ã— 48mm PCB fit the manifold mounting footprint with 2mm to spare on each side.</p>
+                    <p>The wireless module successfully replaced the wired harness in field trials. BLE link reliability was excellent — zero dropped commands in 48 hours of continuous testing at 5m range with one concrete wall between controller and manifold. The pressure sensor readings were accurate to within 1.2mbar against a reference gauge.</p>
+                    <p>Battery life measured 31 hours with all 16 valves cycling at a 50% duty cycle — significantly exceeding the 24-hour specification. The module's compact 78 × 48mm PCB fit the manifold mounting footprint with 2mm to spare on each side.</p>
                     <ul>
                         <li>16 independent solenoid channels, 500mA each at 24V</li>
                         <li>BLE 5.2 with 2Mbps PHY, zero dropped commands in 48h test</li>
-                        <li>Pressure measurement: 0â€“14 bar, Â±1.2mbar accuracy</li>
+                        <li>Pressure measurement: 0–14 bar, Â±1.2mbar accuracy</li>
                         <li>Battery life: 31 hours at 50% valve duty cycle</li>
-                        <li>PCB: 78 Ã— 48mm, 4-layer</li>
+                        <li>PCB: 78 × 48mm, 4-layer</li>
                         <li>Wiring harness cost eliminated: ~â‚¬120/unit saved</li>
                     </ul>
 
                     <div class="project-nav-row">
                         <a href="stm32-industrial.html">â† Previous: STM32 Industrial Controller</a>
-                        <a href="../#portfolio">Back to Portfolio â†—</a>
+                        <a href="../#portfolio">Back to Portfolio ↗</a>
                     </div>
                 </main>
             </div>
@@ -143,7 +143,7 @@
     <footer class="footer">
         <div class="container footer-inner">
             <p class="footer-copy">Â© 2025 MicroCore Electronics</p>
-            <p class="footer-copy">Central Israel Â· info@microcoreelectronics.com Â· 058-744-4321</p>
+            <p class="footer-copy">Central Israel · info@microcoreelectronics.com · 058-744-4321</p>
             <nav class="footer-nav">
                 <a href="../#services">Services</a>
                 <a href="../#about">About</a>
