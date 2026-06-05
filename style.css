@@ -1125,6 +1125,34 @@ a { color: inherit; text-decoration: none; }
 }
 .legal-contact-box p { margin-bottom: 8px; color: #475569; }
 .legal-contact-box a { color: var(--orange); text-decoration: none; }
+/* Language divider */
+.legal-lang-divider {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    margin: 56px 0 40px;
+    color: #94a3b8;
+    font-size: 0.8rem;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+}
+.legal-lang-divider::before,
+.legal-lang-divider::after {
+    content: '';
+    flex: 1;
+    height: 1px;
+    background: var(--border);
+}
+/* English section — LTR */
+.legal-en {
+    direction: ltr;
+    text-align: left;
+}
+.legal-en h1 { font-size: 2.2rem; font-weight: 800; color: var(--navy); margin-bottom: 8px; }
+.legal-en h2 { font-size: 1.1rem; font-weight: 700; color: var(--navy); margin: 36px 0 12px; }
+.legal-en p, .legal-en ul { color: #475569; line-height: 1.8; margin-bottom: 12px; }
+.legal-en ul { padding-left: 24px; }
+.legal-en ul li { margin-bottom: 6px; }
 .legal-contact-box a:hover { text-decoration: underline; }
 .legal-back { margin-top: 48px; }
 .legal-back a {
