@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="he" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>מדיניות פרטיות — MicroCore Electronics</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css?v=15">
+</head>
+<body>
+
+    <!-- NAV -->
+    <header class="nav-header">
+        <div class="nav-inner">
+            <a href="/" class="logo">
+                <svg width="28" height="28" viewBox="0 0 36 36" fill="none">
+                    <rect x="10" y="10" width="16" height="16" rx="2" fill="#0f172a"/>
+                    <rect x="4" y="13" width="6" height="2" rx="1" fill="#0f172a"/>
+                    <rect x="4" y="17" width="6" height="2" rx="1" fill="#0f172a"/>
+                    <rect x="4" y="21" width="6" height="2" rx="1" fill="#0f172a"/>
+                    <rect x="26" y="13" width="6" height="2" rx="1" fill="#0f172a"/>
+                    <rect x="26" y="17" width="6" height="2" rx="1" fill="#0f172a"/>
+                    <rect x="26" y="21" width="6" height="2" rx="1" fill="#0f172a"/>
+                    <rect x="13" y="4" width="2" height="6" rx="1" fill="#0f172a"/>
+                    <rect x="17" y="4" width="2" height="6" rx="1" fill="#0f172a"/>
+                    <rect x="21" y="4" width="2" height="6" rx="1" fill="#0f172a"/>
+                    <rect x="13" y="26" width="2" height="6" rx="1" fill="#0f172a"/>
+                    <rect x="17" y="26" width="2" height="6" rx="1" fill="#0f172a"/>
+                    <rect x="21" y="26" width="2" height="6" rx="1" fill="#0f172a"/>
+                    <circle cx="18" cy="18" r="3" fill="#f97316"/>
+                </svg>
+            </a>
+            <nav class="nav-links">
+                <a href="/#services">Services</a>
+                <a href="/#about">About</a>
+                <a href="/#portfolio">Portfolio</a>
+                <a href="/#contact">Contact</a>
+            </nav>
+            <a href="/#contact" class="nav-cta">Get a Quote ↗</a>
+            <button class="nav-toggle" aria-label="Menu">
+                <span></span><span></span><span></span>
+            </button>
+        </div>
+    </header>
+
+    <!-- CONTENT -->
+    <section class="project-body" style="padding-top: 80px;">
+        <div class="container">
+            <div class="legal-page">
+                <h1>מדיניות פרטיות</h1>
+                <p class="legal-date">עודכן לאחרונה: יוני 2026</p>
+
+                <h2>איסוף ושימוש במידע</h2>
+                <p>האתר נועד לתצוגת פרויקטים ויצירת קשר בלבד. במסגרת טופס יצירת הקשר באתר, אנו אוספים מידע בסיסי כגון שם וכתובת דואר אלקטרוני. מידע זה משמש אך ורק לצורך מתן מענה ישיר לפנייתך.</p>
+
+                <h2>שמירת נתונים ואבטחה</h2>
+                <p>הפרטים הנמסרים בטופס יצירת הקשר אינם נשמרים במאגרי מידע שיווקיים, אינם משמשים לשליחת דיוור פרסומי (ספאם) ללא אישור מפורש, ואינם מועברים לשום צד שלישי, אלא אם נידרש לכך על פי דין.</p>
+
+                <h2>מעקב וסטטיסטיקה (Cookies)</h2>
+                <p>אתר זה אינו עושה שימוש בקבצי עוגיות (Cookies) לצורכי מעקב סטטיסטי אחר משתמשים (כגון Google Analytics) או לצורכי פרסום ממוקד. האתר עשוי להשתמש בשירותים טכניים בסיסיים של צד שלישי (כגון גופני רשת) הדרושים לתצוגה התקינה של האתר.</p>
+
+                <div class="legal-back">
+                    <a href="/">← חזרה לאתר</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="container footer-inner">
+            <p class="footer-copy">© 2026 MicroCore Electronics</p>
+            <p class="footer-copy">Central Israel · info@microcoreelectronics.com · 058-744-4321</p>
+            <nav class="footer-nav">
+                <a href="/#services">Services</a>
+                <a href="/#about">About</a>
+                <a href="/#portfolio">Portfolio</a>
+                <a href="/#contact">Contact</a>
+            </nav>
+            <nav class="footer-legal">
+                <a href="/privacy.html">מדיניות פרטיות</a>
+                <a href="/terms.html">תנאי שימוש</a>
+                <a href="/accessibility.html">הצהרת נגישות</a>
+            </nav>
+        </div>
+    </footer>
+
+    <script>
+        const toggle = document.querySelector('.nav-toggle');
+        const navLinks = document.querySelector('.nav-links');
+        toggle.addEventListener('click', () => navLinks.classList.toggle('open'));
+    </script>
+</body>
+</html>
