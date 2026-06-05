@@ -200,17 +200,24 @@
                 document.getElementById(id).classList.remove('active');
             });
         }
+        // Close on Escape
         document.addEventListener('keydown', e => {
             if (e.key === 'Escape') document.getElementById('a11y-panel').classList.add('hidden');
         });
+        // Close on outside click — stop propagation inside widget
+        document.getElementById('a11y-widget').addEventListener('click', e => e.stopPropagation());
+        document.addEventListener('click', () => {
+            document.getElementById('a11y-panel').classList.add('hidden');
+        });
     </script>
     <style>
-        body.contrast { filter: contrast(1.6) grayscale(0.2); }
+        body.contrast > *:not(#a11y-widget) { filter: contrast(1.55) grayscale(0.1); }
         body.highlight-links a { outline: 2px solid #f97316 !important; outline-offset: 2px; }
         body.readable-font * { font-family: Arial, sans-serif !important; }
         body.stop-anim *, body.stop-anim *::before, body.stop-anim *::after {
             animation: none !important; transition: none !important;
         }
+        #a11y-widget { filter: none !important; isolation: isolate; }
     </style>
 </body>
 </html>
