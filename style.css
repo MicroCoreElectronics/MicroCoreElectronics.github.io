@@ -736,8 +736,8 @@ a { color: inherit; text-decoration: none; }
 .footer-inner {
     display: flex;
     align-items: center;
-    justify-content: space-between;
-    gap: 20px;
+    justify-content: center;
+    gap: 8px 36px;
     flex-wrap: wrap;
 }
 .footer-legal {
