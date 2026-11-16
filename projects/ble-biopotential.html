@@ -8,14 +8,50 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="../style.css?v=19">
+    <link rel="stylesheet" href="../style.css?v=20">
+    <link rel="canonical" href="https://microcoreelectronics.com/projects/ble-biopotential.html">
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+    <link rel="icon" href="/favicon.ico" sizes="any">
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="MicroCore Electronics">
+    <meta property="og:title" content="BLE Biopotential Recorder — MicroCore Electronics">
+    <meta property="og:description" content="8-channel biopotential acquisition board using ADS1298 and nRF5340 dual-core BLE SoC for clinical-grade wireless recording.">
+    <meta property="og:url" content="https://microcoreelectronics.com/projects/ble-biopotential.html">
+    <meta property="og:image" content="https://microcoreelectronics.com/og-image.png">
+    <meta property="og:locale" content="en_US">
+    <meta name="twitter:card" content="summary_large_image">
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "CreativeWork",
+  "name": "BLE Biopotential Recorder",
+  "description": "8-channel biopotential acquisition board using ADS1298 and nRF5340 dual-core BLE SoC for clinical-grade wireless recording.",
+  "url": "https://microcoreelectronics.com/projects/ble-biopotential.html",
+  "creator": {
+    "@type": "Person",
+    "@id": "https://microcoreelectronics.com/#michael-akiva",
+    "name": "Michael Akiva",
+    "jobTitle": "Hardware & Firmware Engineer"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "@id": "https://microcoreelectronics.com/#business",
+    "name": "MicroCore Electronics"
+  },
+  "isPartOf": {
+    "@id": "https://microcoreelectronics.com/#website"
+  },
+  "dateCreated": "2022"
+}
+    </script>
 </head>
 <body>
 
     <!-- NAV -->
     <header class="nav-header">
         <div class="nav-inner">
-            <a href="../" class="logo">
+            <a href="../" class="logo" aria-label="MicroCore Electronics — Home">
                 <svg width="28" height="28" viewBox="0 0 36 36" fill="none">
                     <rect x="10" y="10" width="16" height="16" rx="2" fill="#0f172a"/>
                     <rect x="4" y="13" width="6" height="2" rx="1" fill="#0f172a"/>
@@ -95,14 +131,17 @@
 
                 <!-- MAIN CONTENT -->
                 <main class="project-main">
+                    <p class="project-byline">Designed by Michael Akiva, MicroCore Electronics</p>
                     <h2>The Challenge</h2>
                     <p>The research team was running clinical trials involving ambulatory ECG and EMG monitoring. Existing wired systems were cumbersome for patients and restricted natural movement, compromising data quality. They needed a device that could wirelessly transmit eight simultaneous biopotential channels to a nearby laptop for real-time analysis and recording.</p>
                     <p>The constraints were strict: the device had to run on standard AA batteries for at least 8 hours, maintain a signal bandwidth of DC–500Hz with a noise floor below 1µVrms, and fit within a small enclosure patients could wear on a belt clip.</p>
 
+                    <!-- PHOTO PLACEHOLDER (hidden until real photos are added):
                     <div class="project-img-grid">
                         <div class="project-img-block portfolio-medical">SCHEMATIC</div>
                         <div class="project-img-block" style="background:linear-gradient(135deg,#064e3b,#059669)">LAYOUT</div>
                     </div>
+                    -->
 
                     <h2>The Process</h2>
                     <p>The design centered on two key ICs: the Texas Instruments ADS1298 (8-channel, 24-bit biopotential AFE) and the Nordic Semiconductor nRF5340 dual-core BLE SoC.</p>
@@ -114,9 +153,11 @@
                     </ul>
                     <p>Firmware was developed with Zephyr RTOS, using DMA-driven SPI to ensure deterministic 2kHz sample acquisition with minimal CPU overhead, leaving headroom for BLE stack operations.</p>
 
+                    <!-- PHOTO PLACEHOLDER (hidden until real photos are added):
                     <div class="project-img-full" style="background:linear-gradient(135deg,#064e3b 0%,#047857 60%,#059669 100%)">
                         ASSEMBLED DEVICE
                     </div>
+                    -->
 
                     <h2>The Result</h2>
                     <p>The device achieved all design targets on first prototype. Measured input-referred noise was 0.72µVrms — well below the 1µV specification. BLE connection was stable at 10 meters through typical building walls, and battery life measured 11 hours at full 8-channel, 2kHz operation.</p>
@@ -142,7 +183,7 @@
     <footer class="footer">
         <div class="container footer-inner">
             <p class="footer-copy">© 2026 MicroCore Electronics</p>
-            <p class="footer-copy">Central Israel · info@microcoreelectronics.com · 058-744-4321</p>
+            <p class="footer-copy">Central Israel · info@microcoreelectronics.com · <a href="tel:+972587444321">058-744-4321</a></p>
             <nav class="footer-nav">
                 <a href="../#services">Services</a>
                 <a href="../#about">About</a>

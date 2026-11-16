@@ -8,14 +8,50 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="../style.css?v=19">
+    <link rel="stylesheet" href="../style.css?v=20">
+    <link rel="canonical" href="https://microcoreelectronics.com/projects/wifi6-iot.html">
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+    <link rel="icon" href="/favicon.ico" sizes="any">
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="MicroCore Electronics">
+    <meta property="og:title" content="WiFi 6 IoT Sensor Platform — MicroCore Electronics">
+    <meta property="og:description" content="Compact IoT sensor platform built around ESP32-C6 with WiFi 6, BLE 5, Li-Ion charging, and buck/boost power management.">
+    <meta property="og:url" content="https://microcoreelectronics.com/projects/wifi6-iot.html">
+    <meta property="og:image" content="https://microcoreelectronics.com/og-image.png">
+    <meta property="og:locale" content="en_US">
+    <meta name="twitter:card" content="summary_large_image">
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "CreativeWork",
+  "name": "WiFi 6 IoT Sensor Platform",
+  "description": "Compact IoT sensor platform built around ESP32-C6 with WiFi 6, BLE 5, Li-Ion charging, and buck/boost power management.",
+  "url": "https://microcoreelectronics.com/projects/wifi6-iot.html",
+  "creator": {
+    "@type": "Person",
+    "@id": "https://microcoreelectronics.com/#michael-akiva",
+    "name": "Michael Akiva",
+    "jobTitle": "Hardware & Firmware Engineer"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "@id": "https://microcoreelectronics.com/#business",
+    "name": "MicroCore Electronics"
+  },
+  "isPartOf": {
+    "@id": "https://microcoreelectronics.com/#website"
+  },
+  "dateCreated": "2024"
+}
+    </script>
 </head>
 <body>
 
     <!-- NAV -->
     <header class="nav-header">
         <div class="nav-inner">
-            <a href="../" class="logo">
+            <a href="../" class="logo" aria-label="MicroCore Electronics — Home">
                 <svg width="28" height="28" viewBox="0 0 36 36" fill="none">
                     <rect x="10" y="10" width="16" height="16" rx="2" fill="#0f172a"/>
                     <rect x="4" y="13" width="6" height="2" rx="1" fill="#0f172a"/>
@@ -95,14 +131,17 @@
 
                 <!-- MAIN CONTENT -->
                 <main class="project-main">
+                    <p class="project-byline">Designed by Michael Akiva, MicroCore Electronics</p>
                     <h2>The Challenge</h2>
                     <p>The client needed to deploy hundreds of wireless sensor nodes across an industrial facility to monitor temperature, humidity, and vibration in real time. The nodes had to connect to an existing WiFi 6 infrastructure, last at least 12 months on a battery charge in low-activity mode, and cost under $15 in BOM at 500-unit volumes.</p>
                     <p>The design also needed to support USB-C charging and OTA firmware updates over WiFi — without a separate programming interface, since the nodes would be sealed once deployed.</p>
 
+                    <!-- PHOTO PLACEHOLDER (hidden until real photos are added):
                     <div class="project-img-grid">
                         <div class="project-img-block portfolio-iot">SCHEMATIC</div>
                         <div class="project-img-block" style="background:linear-gradient(135deg,#7c2d12,#ea580c)">LAYOUT</div>
                     </div>
+                    -->
 
                     <h2>The Process</h2>
                     <p>The ESP32-C6 was selected as the heart of the design — it is the first Espressif SoC with native WiFi 6 (802.11ax) support alongside Bluetooth 5 LE and IEEE 802.15.4, making it ideal for a multi-protocol IoT node.</p>
@@ -114,9 +153,11 @@
                     </ul>
                     <p>Firmware was built on ESP-IDF with FreeRTOS. A custom WiFi 6 TWT (Target Wake Time) schedule was negotiated with the access point to align radio wake times with sensor acquisition — a key factor in achieving the &lt;20µA average current target.</p>
 
+                    <!-- PHOTO PLACEHOLDER (hidden until real photos are added):
                     <div class="project-img-full" style="background:linear-gradient(135deg,#7c2d12 0%,#c2410c 60%,#ea580c 100%)">
                         ASSEMBLED NODE
                     </div>
+                    -->
 
                     <h2>The Result</h2>
                     <p>The prototype met all design targets. BOM cost at 500 units came in at $12.80, comfortably under budget. Average current in the field deployment profile measured 18µA — yielding over 13 months of battery life in practice.</p>
@@ -142,7 +183,7 @@
     <footer class="footer">
         <div class="container footer-inner">
             <p class="footer-copy">© 2026 MicroCore Electronics</p>
-            <p class="footer-copy">Central Israel · info@microcoreelectronics.com · 058-744-4321</p>
+            <p class="footer-copy">Central Israel · info@microcoreelectronics.com · <a href="tel:+972587444321">058-744-4321</a></p>
             <nav class="footer-nav">
                 <a href="../#services">Services</a>
                 <a href="../#about">About</a>

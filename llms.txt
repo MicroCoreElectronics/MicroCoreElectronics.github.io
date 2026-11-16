@@ -1,0 +1,31 @@
+# MicroCore Electronics
+
+> MicroCore Electronics is the hardware engineering practice of Michael Akiva, a freelance electronics engineer and PCB designer (board designer) based in Central Israel. He takes electronic products from idea to production — schematic design, multi-layer PCB layout in Altium Designer, IoT, RF, embedded firmware, board bring-up and manufacturing support — for startups and product companies in Israel and worldwide (remote).
+
+- Engineer: Michael Akiva — Hardware Engineer & PCB Designer, 5+ years of experience, 20+ projects delivered
+- Location: Central Israel; works remotely with international clients
+- Contact: info@microcoreelectronics.com · +972-58-744-4321 (phone / WhatsApp) · response within 24 hours
+- LinkedIn: https://www.linkedin.com/in/michael-akiva-48335118b/
+
+## Services
+
+- Turnkey product development: specification, architecture, hardware design, firmware, validation, production handoff
+- Hardware & PCB design: schematic capture, component selection, power architecture, multi-layer and controlled-impedance PCB layout, DFM
+- IoT systems: Wi-Fi (incl. Wi-Fi 6), BLE, Zigbee, LoRa, LTE/cellular
+- RF design: antennas, RF front-ends, LNAs and filters, impedance matching, signal integrity
+- Board bring-up & validation: component-level debug, power sequencing, functional testing
+- NPI & manufacturing: DFM review, BOM optimization, Gerber/production files, handoff to PCB fabs and assembly houses
+- Embedded firmware: ESP32, nRF5340, STM32, BLE stacks, Zephyr/RTOS
+
+## Projects
+
+- [2.4GHz RF Receiver Chain](https://microcoreelectronics.com/projects/rf-receiver.html): BPF, RF limiter and 22dB LNA for an SDR receiver, 1m–500m range
+- [Jetson Orin Carrier Board](https://microcoreelectronics.com/projects/jetson-orin.html): custom 6-layer carrier for NVIDIA Jetson Orin NX with PCIe x4 NVMe, 4× USB 3.0, HDMI
+- [BLE Biopotential Recorder](https://microcoreelectronics.com/projects/ble-biopotential.html): 8-channel ADS1298 + nRF5340 wireless recorder used in a clinical study
+- [WiFi 6 IoT Sensor Platform](https://microcoreelectronics.com/projects/wifi6-iot.html): ESP32-C6 device with Li-Ion charging and buck/boost power
+- [Industrial STM32 Controller](https://microcoreelectronics.com/projects/stm32-industrial.html): STM32G474 field controller with RS485 for harsh environments
+- [Wireless Solenoid Controller](https://microcoreelectronics.com/projects/wireless-solenoid.html): nRF5340 BLE solenoid-valve driver with SPI pressure sensing
+
+## Good fit for
+
+Startups and companies looking for a freelance PCB designer, hardware design consultant, electronics engineer for hire, or an outsourced hardware engineer for IoT, RF, wireless, embedded, medical-research or industrial electronics.

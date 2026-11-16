@@ -8,14 +8,50 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="../style.css?v=19">
+    <link rel="stylesheet" href="../style.css?v=20">
+    <link rel="canonical" href="https://microcoreelectronics.com/projects/stm32-industrial.html">
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+    <link rel="icon" href="/favicon.ico" sizes="any">
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="MicroCore Electronics">
+    <meta property="og:title" content="Industrial STM32 Controller — MicroCore Electronics">
+    <meta property="og:description" content="Modular industrial field controller based on STM32G474 with RS485, extensive GPIO, designed for harsh environments.">
+    <meta property="og:url" content="https://microcoreelectronics.com/projects/stm32-industrial.html">
+    <meta property="og:image" content="https://microcoreelectronics.com/og-image.png">
+    <meta property="og:locale" content="en_US">
+    <meta name="twitter:card" content="summary_large_image">
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "CreativeWork",
+  "name": "Industrial STM32 Controller",
+  "description": "Modular industrial field controller based on STM32G474 with RS485, extensive GPIO, designed for harsh environments.",
+  "url": "https://microcoreelectronics.com/projects/stm32-industrial.html",
+  "creator": {
+    "@type": "Person",
+    "@id": "https://microcoreelectronics.com/#michael-akiva",
+    "name": "Michael Akiva",
+    "jobTitle": "Hardware & Firmware Lead"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "@id": "https://microcoreelectronics.com/#business",
+    "name": "MicroCore Electronics"
+  },
+  "isPartOf": {
+    "@id": "https://microcoreelectronics.com/#website"
+  },
+  "dateCreated": "2023"
+}
+    </script>
 </head>
 <body>
 
     <!-- NAV -->
     <header class="nav-header">
         <div class="nav-inner">
-            <a href="../" class="logo">
+            <a href="../" class="logo" aria-label="MicroCore Electronics — Home">
                 <svg width="28" height="28" viewBox="0 0 36 36" fill="none">
                     <rect x="10" y="10" width="16" height="16" rx="2" fill="#0f172a"/>
                     <rect x="4" y="13" width="6" height="2" rx="1" fill="#0f172a"/>
@@ -95,14 +131,17 @@
 
                 <!-- MAIN CONTENT -->
                 <main class="project-main">
+                    <p class="project-byline">Designed by Michael Akiva, MicroCore Electronics</p>
                     <h2>The Challenge</h2>
                     <p>An industrial automation OEM was building a family of field controllers for their product line — motor drives, valve actuators, and sensor hubs — all needing to communicate over RS485 Modbus RTU networks running through electrically noisy factory floors. They needed a common hardware platform that could be customized per product variant without a full redesign each time.</p>
                     <p>Environmental requirements were stringent: the boards had to operate at −40°C to +85°C, withstand 8kV ESD on all I/O, survive 2kV transient spikes on the 24V supply line, and fit in a standard 6-module DIN rail enclosure.</p>
 
+                    <!-- PHOTO PLACEHOLDER (hidden until real photos are added):
                     <div class="project-img-grid">
                         <div class="project-img-block portfolio-industrial">SCHEMATIC</div>
                         <div class="project-img-block" style="background:linear-gradient(135deg,#713f12,#d97706)">LAYOUT</div>
                     </div>
+                    -->
 
                     <h2>The Process</h2>
                     <p>The STM32G474RET6 was chosen for its combination of Cortex-M4 performance (170MHz), rich peripheral set (HRTIM, 5× ADC, 3× SPI, 4× UART), and availability in industrial temperature grade.</p>
@@ -114,9 +153,11 @@
                     </ul>
                     <p>Firmware was written in C on STM32CubeIDE using HAL drivers and FreeRTOS. A Modbus RTU slave stack was implemented with a 1ms interrupt-driven character timeout. The modular code structure allowed each product variant's application code to be developed and tested independently against a stable firmware API.</p>
 
+                    <!-- PHOTO PLACEHOLDER (hidden until real photos are added):
                     <div class="project-img-full" style="background:linear-gradient(135deg,#713f12 0%,#b45309 60%,#d97706 100%)">
                         ASSEMBLED CONTROLLER
                     </div>
+                    -->
 
                     <h2>The Result</h2>
                     <p>The base controller passed all required EMC tests — ESD, EFT/burst, and surge — on first submission, with no PCB changes required after testing. The Modbus RTU implementation achieved error-free communication at 115200 baud on a 200m RS485 cable with 8 nodes on the bus.</p>
@@ -142,7 +183,7 @@
     <footer class="footer">
         <div class="container footer-inner">
             <p class="footer-copy">© 2026 MicroCore Electronics</p>
-            <p class="footer-copy">Central Israel · info@microcoreelectronics.com · 058-744-4321</p>
+            <p class="footer-copy">Central Israel · info@microcoreelectronics.com · <a href="tel:+972587444321">058-744-4321</a></p>
             <nav class="footer-nav">
                 <a href="../#services">Services</a>
                 <a href="../#about">About</a>
