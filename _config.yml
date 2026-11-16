@@ -1,6 +1,0 @@
-# Files kept in the repo but not published on the site
-exclude:
-  - index.html.bak
-  - squarespace-guide.md
-  - website-content.md
-  - css/
