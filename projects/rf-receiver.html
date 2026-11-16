@@ -8,7 +8,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="../style.css?v=19">
+    <link rel="stylesheet" href="../style.css?v=20">
     <link rel="canonical" href="https://microcoreelectronics.com/projects/rf-receiver.html">
     <link rel="icon" href="/favicon.svg" type="image/svg+xml">
     <link rel="icon" href="/favicon.ico" sizes="any">
@@ -21,6 +21,30 @@
     <meta property="og:image" content="https://microcoreelectronics.com/og-image.png">
     <meta property="og:locale" content="en_US">
     <meta name="twitter:card" content="summary_large_image">
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "CreativeWork",
+  "name": "2.4GHz RF Receiver Chain",
+  "description": "Custom RF receiver chain design for SDR: band-pass filter, RF limiter, and low-noise amplifier with 22dB gain.",
+  "url": "https://microcoreelectronics.com/projects/rf-receiver.html",
+  "creator": {
+    "@type": "Person",
+    "@id": "https://microcoreelectronics.com/#michael-akiva",
+    "name": "Michael Akiva",
+    "jobTitle": "RF Design Engineer"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "@id": "https://microcoreelectronics.com/#business",
+    "name": "MicroCore Electronics"
+  },
+  "isPartOf": {
+    "@id": "https://microcoreelectronics.com/#website"
+  },
+  "dateCreated": "2023"
+}
+    </script>
 </head>
 <body>
 
@@ -107,6 +131,7 @@
 
                 <!-- MAIN CONTENT -->
                 <main class="project-main">
+                    <p class="project-byline">Designed by Michael Akiva, MicroCore Electronics</p>
                     <h2>The Challenge</h2>
                     <p>The client needed to reliably detect and decode 2.4GHz wireless signals at distances from 1 meter up to 500 meters — a 500x dynamic range — using a software-defined radio (SDR) receiver. Off-the-shelf RF front ends were either too expensive, too large, or lacked the sensitivity required for the application.</p>
                     <p>The key constraints were demanding: noise figure below 3dB, gain of at least 20dB, and sufficient filtering to reject out-of-band interference from nearby WiFi and Bluetooth transmitters — all in a compact footprint suitable for a battery-powered enclosure.</p>

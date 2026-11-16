@@ -8,7 +8,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="../style.css?v=19">
+    <link rel="stylesheet" href="../style.css?v=20">
     <link rel="canonical" href="https://microcoreelectronics.com/projects/stm32-industrial.html">
     <link rel="icon" href="/favicon.svg" type="image/svg+xml">
     <link rel="icon" href="/favicon.ico" sizes="any">
@@ -21,6 +21,30 @@
     <meta property="og:image" content="https://microcoreelectronics.com/og-image.png">
     <meta property="og:locale" content="en_US">
     <meta name="twitter:card" content="summary_large_image">
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "CreativeWork",
+  "name": "Industrial STM32 Controller",
+  "description": "Modular industrial field controller based on STM32G474 with RS485, extensive GPIO, designed for harsh environments.",
+  "url": "https://microcoreelectronics.com/projects/stm32-industrial.html",
+  "creator": {
+    "@type": "Person",
+    "@id": "https://microcoreelectronics.com/#michael-akiva",
+    "name": "Michael Akiva",
+    "jobTitle": "Hardware & Firmware Lead"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "@id": "https://microcoreelectronics.com/#business",
+    "name": "MicroCore Electronics"
+  },
+  "isPartOf": {
+    "@id": "https://microcoreelectronics.com/#website"
+  },
+  "dateCreated": "2023"
+}
+    </script>
 </head>
 <body>
 
@@ -107,6 +131,7 @@
 
                 <!-- MAIN CONTENT -->
                 <main class="project-main">
+                    <p class="project-byline">Designed by Michael Akiva, MicroCore Electronics</p>
                     <h2>The Challenge</h2>
                     <p>An industrial automation OEM was building a family of field controllers for their product line — motor drives, valve actuators, and sensor hubs — all needing to communicate over RS485 Modbus RTU networks running through electrically noisy factory floors. They needed a common hardware platform that could be customized per product variant without a full redesign each time.</p>
                     <p>Environmental requirements were stringent: the boards had to operate at −40°C to +85°C, withstand 8kV ESD on all I/O, survive 2kV transient spikes on the 24V supply line, and fit in a standard 6-module DIN rail enclosure.</p>

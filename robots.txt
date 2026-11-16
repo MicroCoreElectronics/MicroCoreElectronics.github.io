@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://microcoreelectronics.com/sitemap.xml

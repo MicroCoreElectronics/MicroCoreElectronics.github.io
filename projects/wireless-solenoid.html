@@ -8,7 +8,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="../style.css?v=19">
+    <link rel="stylesheet" href="../style.css?v=20">
     <link rel="canonical" href="https://microcoreelectronics.com/projects/wireless-solenoid.html">
     <link rel="icon" href="/favicon.svg" type="image/svg+xml">
     <link rel="icon" href="/favicon.ico" sizes="any">
@@ -21,6 +21,30 @@
     <meta property="og:image" content="https://microcoreelectronics.com/og-image.png">
     <meta property="og:locale" content="en_US">
     <meta name="twitter:card" content="summary_large_image">
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "CreativeWork",
+  "name": "Wireless Solenoid Controller",
+  "description": "BLE-controlled solenoid valve driver using nRF5340, shift registers, SPI pressure sensing, and battery power management.",
+  "url": "https://microcoreelectronics.com/projects/wireless-solenoid.html",
+  "creator": {
+    "@type": "Person",
+    "@id": "https://microcoreelectronics.com/#michael-akiva",
+    "name": "Michael Akiva",
+    "jobTitle": "Hardware & Firmware Engineer"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "@id": "https://microcoreelectronics.com/#business",
+    "name": "MicroCore Electronics"
+  },
+  "isPartOf": {
+    "@id": "https://microcoreelectronics.com/#website"
+  },
+  "dateCreated": "2024"
+}
+    </script>
 </head>
 <body>
 
@@ -107,6 +131,7 @@
 
                 <!-- MAIN CONTENT -->
                 <main class="project-main">
+                    <p class="project-byline">Designed by Michael Akiva, MicroCore Electronics</p>
                     <h2>The Challenge</h2>
                     <p>The client manufactured a fluid control manifold system in which a central controller needed to independently actuate up to 16 solenoid valves. In the existing wired design, a thick multi-conductor harness ran from the controller cabinet to the manifold — expensive to manufacture, prone to connector failures, and difficult to route in tight installations.</p>
                     <p>The goal was to replace the wiring harness with a wireless module mounted directly on the manifold, controlled over BLE from the main controller. The module also needed to read system pressure from a sensor via SPI, run on a Li-Ion battery pack for at least 24 hours of continuous operation, and fit within the existing manifold footprint (80 × 50mm).</p>

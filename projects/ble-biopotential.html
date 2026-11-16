@@ -8,7 +8,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="../style.css?v=19">
+    <link rel="stylesheet" href="../style.css?v=20">
     <link rel="canonical" href="https://microcoreelectronics.com/projects/ble-biopotential.html">
     <link rel="icon" href="/favicon.svg" type="image/svg+xml">
     <link rel="icon" href="/favicon.ico" sizes="any">
@@ -21,6 +21,30 @@
     <meta property="og:image" content="https://microcoreelectronics.com/og-image.png">
     <meta property="og:locale" content="en_US">
     <meta name="twitter:card" content="summary_large_image">
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "CreativeWork",
+  "name": "BLE Biopotential Recorder",
+  "description": "8-channel biopotential acquisition board using ADS1298 and nRF5340 dual-core BLE SoC for clinical-grade wireless recording.",
+  "url": "https://microcoreelectronics.com/projects/ble-biopotential.html",
+  "creator": {
+    "@type": "Person",
+    "@id": "https://microcoreelectronics.com/#michael-akiva",
+    "name": "Michael Akiva",
+    "jobTitle": "Hardware & Firmware Engineer"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "@id": "https://microcoreelectronics.com/#business",
+    "name": "MicroCore Electronics"
+  },
+  "isPartOf": {
+    "@id": "https://microcoreelectronics.com/#website"
+  },
+  "dateCreated": "2022"
+}
+    </script>
 </head>
 <body>
 
@@ -107,6 +131,7 @@
 
                 <!-- MAIN CONTENT -->
                 <main class="project-main">
+                    <p class="project-byline">Designed by Michael Akiva, MicroCore Electronics</p>
                     <h2>The Challenge</h2>
                     <p>The research team was running clinical trials involving ambulatory ECG and EMG monitoring. Existing wired systems were cumbersome for patients and restricted natural movement, compromising data quality. They needed a device that could wirelessly transmit eight simultaneous biopotential channels to a nearby laptop for real-time analysis and recording.</p>
                     <p>The constraints were strict: the device had to run on standard AA batteries for at least 8 hours, maintain a signal bandwidth of DC–500Hz with a noise floor below 1µVrms, and fit within a small enclosure patients could wear on a belt clip.</p>
